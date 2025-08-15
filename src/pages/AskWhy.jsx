@@ -1,9 +1,15 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default function AskWhy() {
   const [messages, setMessages] = useState([]); // stores { role: "user"|"ai", text: "" }
   const [question, setQuestion] = useState("");
   const [loading, setLoading] = useState(false);
+  const messagesEndRef = useRef(null);
+
+  // Auto-scroll to bottom when messages change
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
 
   const handleAsk = async () => {
     if (!question.trim()) return;
@@ -65,7 +71,9 @@ export default function AskWhy() {
             style={{
               alignSelf: msg.role === "user" ? "flex-end" : "flex-start",
               background:
-                msg.role === "user" ? "linear-gradient(45deg, #d6249f, #285AEB)" : "#efefef",
+                msg.role === "user"
+                  ? "linear-gradient(45deg, #d6249f, #285AEB)"
+                  : "#efefef",
               color: msg.role === "user" ? "white" : "black",
               padding: "10px 14px",
               borderRadius: "18px",
@@ -78,6 +86,7 @@ export default function AskWhy() {
             {msg.text}
           </div>
         ))}
+        <div ref={messagesEndRef} /> {/* Auto-scroll target */}
       </div>
 
       {/* Input area */}
