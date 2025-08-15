@@ -1,0 +1,1730 @@
+[
+  {
+    "datetime": "06 Jan 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Hi team — starting week 1. Garmin synced.",
+    "side": "right"
+  },
+  {
+    "datetime": "07 Jan 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Welcome Rohan. Baseline test booked Tue 07:30. Fast overnight.",
+    "side": "left"
+  },
+  {
+    "datetime": "07 Jan 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Quick follow-up: Sarah shared travel calendar.",
+    "side": "right"
+  },
+  {
+    "datetime": "08 Jan 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Quick Q: can I do 20-min sessions instead of 30?",
+    "side": "right"
+  },
+  {
+    "datetime": "09 Jan 2025, 10:00 AM",
+    "sender": "Carla (Nutrition)",
+    "text": "Weekly nutrition tip sent: aim protein breakfast 3x/week.",
+    "side": "left"
+  },
+  {
+    "datetime": "10 Jan 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logging dinners in MyFitnessPal this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "11 Jan 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Reminder: bring ID for baseline tests.",
+    "side": "left"
+  },
+  {
+    "datetime": "12 Jan 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "13 Jan 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Hi team — starting week 2. Garmin synced.",
+    "side": "right"
+  },
+  {
+    "datetime": "14 Jan 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Welcome Rohan. Baseline test booked.",
+    "side": "left"
+  },
+  {
+    "datetime": "14 Jan 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Quick follow-up: sent MyFitnessPal invite.",
+    "side": "right"
+  },
+  {
+    "datetime": "15 Jan 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Quick Q: can I do 20-min sessions instead of 30?",
+    "side": "right"
+  },
+  {
+    "datetime": "16 Jan 2025, 10:00 AM",
+    "sender": "Advik (Performance)",
+    "text": "Biweekly exercise update: plan sent. We'll adapt for travel week.",
+    "side": "left"
+  },
+  {
+    "datetime": "17 Jan 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logging dinners in MyFitnessPal this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "18 Jan 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent: steps and BP to monitor.",
+    "side": "left"
+  },
+  {
+    "datetime": "19 Jan 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "20 Jan 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 3 — syncing Garmin data for sleep.",
+    "side": "right"
+  },
+  {
+    "datetime": "21 Jan 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Got it. Carla will review food log.",
+    "side": "left"
+  },
+  {
+    "datetime": "21 Jan 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Follow-up: can you resend mobility routine?",
+    "side": "right"
+  },
+  {
+    "datetime": "22 Jan 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Any short protein breakfast suggestions?",
+    "side": "right"
+  },
+  {
+    "datetime": "23 Jan 2025, 10:00 AM",
+    "sender": "Rachel (PT)",
+    "text": "Mobility routine shared — 3 moves, 10 min after flights.",
+    "side": "left"
+  },
+  {
+    "datetime": "24 Jan 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Did 1 of 3 sessions this week (50%).",
+    "side": "right"
+  },
+  {
+    "datetime": "25 Jan 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent: steps and BP to monitor.",
+    "side": "left"
+  },
+  {
+    "datetime": "26 Jan 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "27 Jan 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 4 — traveling Thu-Fri.",
+    "side": "right"
+  },
+  {
+    "datetime": "28 Jan 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Noted travel week; we'll adapt the plan.",
+    "side": "left"
+  },
+  {
+    "datetime": "28 Jan 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Sent home BP readings from this morning.",
+    "side": "right"
+  },
+  {
+    "datetime": "29 Jan 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Can I swap workouts for walks on travel days?",
+    "side": "right"
+  },
+  {
+    "datetime": "30 Jan 2025, 10:00 AM",
+    "sender": "Advik (Performance)",
+    "text": "Biweekly exercise update: travel plan suggested — 2×20-min hotel sessions + walking.",
+    "side": "left"
+  },
+  {
+    "datetime": "31 Jan 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logging dinners in MyFitnessPal despite travel.",
+    "side": "right"
+  },
+  {
+    "datetime": "01 Feb 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent: travel adaptations added.",
+    "side": "left"
+  },
+  {
+    "datetime": "02 Feb 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions; traveling this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "03 Feb 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 5 — back home, energy lower after flights.",
+    "side": "right"
+  },
+  {
+    "datetime": "04 Feb 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Welcome back — hydrate and rest where possible.",
+    "side": "left"
+  },
+  {
+    "datetime": "04 Feb 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Follow-up: any supplement suggestions?",
+    "side": "right"
+  },
+  {
+    "datetime": "05 Feb 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "BP readings sent: 140/88, 138/86.",
+    "side": "right"
+  },
+  {
+    "datetime": "06 Feb 2025, 10:00 AM",
+    "sender": "Carla (Nutrition)",
+    "text": "If fish intake low, consider omega-3; protein at breakfast recommended.",
+    "side": "left"
+  },
+  {
+    "datetime": "07 Feb 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logging dinners in MyFitnessPal this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "08 Feb 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent: monitor BP, continue low-salt swaps.",
+    "side": "left"
+  },
+  {
+    "datetime": "09 Feb 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "10 Feb 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 6 — can we shorten strength sets?",
+    "side": "right"
+  },
+  {
+    "datetime": "11 Feb 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Noted — Advik will adjust next block.",
+    "side": "left"
+  },
+  {
+    "datetime": "11 Feb 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Garmin shows HRV dip midweek.",
+    "side": "right"
+  },
+  {
+    "datetime": "12 Feb 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Can I skip strength if HRV low?",
+    "side": "right"
+  },
+  {
+    "datetime": "13 Feb 2025, 10:00 AM",
+    "sender": "Advik (Performance)",
+    "text": "Biweekly update: keep sessions but lower intensity on low HRV days.",
+    "side": "left"
+  },
+  {
+    "datetime": "14 Feb 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MFP 4/7 this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "15 Feb 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent: sleep & HRV noted.",
+    "side": "left"
+  },
+  {
+    "datetime": "16 Feb 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "17 Feb 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 7 — I read about ApoB, what is it?",
+    "side": "right"
+  },
+  {
+    "datetime": "18 Feb 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Dr. Warren will answer — we included ApoB in testing.",
+    "side": "left"
+  },
+  {
+    "datetime": "18 Feb 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Also: what does CRP tell us?",
+    "side": "right"
+  },
+  {
+    "datetime": "19 Feb 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "And when is the 3-month test again?",
+    "side": "right"
+  },
+  {
+    "datetime": "20 Feb 2025, 10:00 AM",
+    "sender": "Carla (Nutrition)",
+    "text": "CRP indicates inflammation; ApoB is particle number. We’ll review at 3-month test.",
+    "side": "left"
+  },
+  {
+    "datetime": "21 Feb 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MyFitnessPal this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "22 Feb 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent. 3-month test scheduled week 12.",
+    "side": "left"
+  },
+  {
+    "datetime": "23 Feb 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "24 Feb 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 8 — traveling Asia this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "25 Feb 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Noted. Travel plan will be sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "25 Feb 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Can you suggest low-salt phrases for restaurants?",
+    "side": "right"
+  },
+  {
+    "datetime": "26 Feb 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Mobility on plane — is that ok?",
+    "side": "right"
+  },
+  {
+    "datetime": "27 Feb 2025, 10:00 AM",
+    "sender": "Advik (Performance)",
+    "text": "Biweekly update: travel plan 2×20-min hotel sessions + walking.",
+    "side": "left"
+  },
+  {
+    "datetime": "28 Feb 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "I’ll try to log steps each day.",
+    "side": "right"
+  },
+  {
+    "datetime": "01 Mar 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent: travel adaptations added.",
+    "side": "left"
+  },
+  {
+    "datetime": "02 Mar 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions; traveling this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "03 Mar 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 9 — back home, did 2 hotel sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "04 Mar 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Welcome back — how did energy feel?",
+    "side": "left"
+  },
+  {
+    "datetime": "04 Mar 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Energy low first two days, better later.",
+    "side": "right"
+  },
+  {
+    "datetime": "05 Mar 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "BP mornings: 137/86, 136/85.",
+    "side": "right"
+  },
+  {
+    "datetime": "06 Mar 2025, 10:00 AM",
+    "sender": "Rachel (PT)",
+    "text": "Recovery tips sent: stretch, short walk, mobility.",
+    "side": "left"
+  },
+  {
+    "datetime": "07 Mar 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MFP 3/7 this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "08 Mar 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent: steps and BP to monitor.",
+    "side": "left"
+  },
+  {
+    "datetime": "09 Mar 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "10 Mar 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 10 — can one session be HIIT?",
+    "side": "right"
+  },
+  {
+    "datetime": "11 Mar 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Advik to advise; HIIT possible if recovery ok.",
+    "side": "left"
+  },
+  {
+    "datetime": "11 Mar 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "I’ll keep sessions ≤20 min on weekdays.",
+    "side": "right"
+  },
+  {
+    "datetime": "12 Mar 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Steps target this week?",
+    "side": "right"
+  },
+  {
+    "datetime": "13 Mar 2025, 10:00 AM",
+    "sender": "Advik (Performance)",
+    "text": "Biweekly update: allow one 20-min HIIT if HRV stable.",
+    "side": "left"
+  },
+  {
+    "datetime": "14 Mar 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logging dinners in MFP this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "15 Mar 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent: plan adjustments noted.",
+    "side": "left"
+  },
+  {
+    "datetime": "16 Mar 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "17 Mar 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 11 — prepping for 3-month tests.",
+    "side": "right"
+  },
+  {
+    "datetime": "18 Mar 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Reminder: fast overnight for bloods; bring BP logs.",
+    "side": "left"
+  },
+  {
+    "datetime": "18 Mar 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Confirming fasting and clinic time.",
+    "side": "right"
+  },
+  {
+    "datetime": "19 Mar 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Any foods to avoid day before test?",
+    "side": "right"
+  },
+  {
+    "datetime": "20 Mar 2025, 10:00 AM",
+    "sender": "Carla (Nutrition)",
+    "text": "Avoid alcohol 48h before; keep usual meds unless told otherwise.",
+    "side": "left"
+  },
+  {
+    "datetime": "21 Mar 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged weight & BP.",
+    "side": "right"
+  },
+  {
+    "datetime": "22 Mar 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent: 3-month panel scheduled next week.",
+    "side": "left"
+  },
+  {
+    "datetime": "23 Mar 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "24 Mar 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 12 — at clinic today for 3-month bloods.",
+    "side": "right"
+  },
+  {
+    "datetime": "25 Mar 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Thanks — we’ll notify when labs return.",
+    "side": "left"
+  },
+  {
+    "datetime": "25 Mar 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "I’m traveling later this week but returned for the test.",
+    "side": "right"
+  },
+  {
+    "datetime": "26 Mar 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Will share BP logs at home.",
+    "side": "right"
+  },
+  {
+    "datetime": "27 Mar 2025, 10:00 AM",
+    "sender": "Dr. Warren (Medical)",
+    "text": "3-month highlight: LDL slightly decreased; CRP normal; BP trend stable. Continue current plan; intensify salt reduction.",
+    "side": "left"
+  },
+  {
+    "datetime": "28 Mar 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Noted — thanks for short summary.",
+    "side": "right"
+  },
+  {
+    "datetime": "29 Mar 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly highlight sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "30 Mar 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions; traveling this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "31 Mar 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 13 — back home, want diet tweaks.",
+    "side": "right"
+  },
+  {
+    "datetime": "01 Apr 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Carla will send simple swaps for dining out.",
+    "side": "left"
+  },
+  {
+    "datetime": "01 Apr 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Can I swap late carbs for veg 4 nights?",
+    "side": "right"
+  },
+  {
+    "datetime": "02 Apr 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "I’ll aim protein breakfast 4x/wk.",
+    "side": "right"
+  },
+  {
+    "datetime": "03 Apr 2025, 10:00 AM",
+    "sender": "Carla (Nutrition)",
+    "text": "Swap confirmed — choose veg + lean protein; small easy swaps sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "04 Apr 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MFP 4/7 this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "05 Apr 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "06 Apr 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "07 Apr 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 14 — can we add short mobility daily?",
+    "side": "right"
+  },
+  {
+    "datetime": "08 Apr 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Rachel will confirm mobility routine.",
+    "side": "left"
+  },
+  {
+    "datetime": "08 Apr 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "My HRV was low midweek—should I rest?",
+    "side": "right"
+  },
+  {
+    "datetime": "09 Apr 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Also can I keep two higher intensity sessions?",
+    "side": "right"
+  },
+  {
+    "datetime": "10 Apr 2025, 10:00 AM",
+    "sender": "Advik (Performance)",
+    "text": "Biweekly update: keep 2 higher-effort 20–25 min sessions, mobility daily OK.",
+    "side": "left"
+  },
+  {
+    "datetime": "11 Apr 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MFP this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "12 Apr 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "13 Apr 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "14 Apr 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 15 — travel next week — can we reduce plan?",
+    "side": "right"
+  },
+  {
+    "datetime": "15 Apr 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Travel week plan will be sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "15 Apr 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Also please resend mobility video.",
+    "side": "right"
+  },
+  {
+    "datetime": "16 Apr 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Will try to do 2 hotel sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "17 Apr 2025, 10:00 AM",
+    "sender": "Carla (Nutrition)",
+    "text": "Travel meal checklist sent (low salt, protein-first).",
+    "side": "left"
+  },
+  {
+    "datetime": "18 Apr 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MFP.",
+    "side": "right"
+  },
+  {
+    "datetime": "19 Apr 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "20 Apr 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "21 Apr 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 16 — traveling this week (Jakarta).",
+    "side": "right"
+  },
+  {
+    "datetime": "22 Apr 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Noted — travel plan live.",
+    "side": "left"
+  },
+  {
+    "datetime": "22 Apr 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Can I do mobility between meetings?",
+    "side": "right"
+  },
+  {
+    "datetime": "23 Apr 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Steps will be primary metric for this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "24 Apr 2025, 10:00 AM",
+    "sender": "Advik (Performance)",
+    "text": "Biweekly update: 2×20min hotel workouts + walk between meetings.",
+    "side": "left"
+  },
+  {
+    "datetime": "25 Apr 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged Garmin steps daily.",
+    "side": "right"
+  },
+  {
+    "datetime": "26 Apr 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent: travel adaptations included.",
+    "side": "left"
+  },
+  {
+    "datetime": "27 Apr 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions; traveling this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "28 Apr 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 17 — back home, BP mornings ~136/85.",
+    "side": "right"
+  },
+  {
+    "datetime": "29 Apr 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Noted — Dr. Warren monitoring trends.",
+    "side": "left"
+  },
+  {
+    "datetime": "29 Apr 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Food logging 3/7 this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "30 Apr 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Energy slightly better today.",
+    "side": "right"
+  },
+  {
+    "datetime": "01 May 2025, 10:00 AM",
+    "sender": "Rachel (PT)",
+    "text": "Recovery tips and stretch sequence sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "02 May 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MFP 3/7 this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "03 May 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "04 May 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "05 May 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 18 — can we increase cardio intensity?",
+    "side": "right"
+  },
+  {
+    "datetime": "06 May 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Advik to advise on progression.",
+    "side": "left"
+  },
+  {
+    "datetime": "06 May 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "I’ll keep sessions to ~20–25 min.",
+    "side": "right"
+  },
+  {
+    "datetime": "07 May 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Weekend long walk possible — count as session?",
+    "side": "right"
+  },
+  {
+    "datetime": "08 May 2025, 10:00 AM",
+    "sender": "Advik (Performance)",
+    "text": "Biweekly update: weekend long walk can count as cardio session. Monitor HRV.",
+    "side": "left"
+  },
+  {
+    "datetime": "09 May 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MFP this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "10 May 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "11 May 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "12 May 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 19 — quick lab question: my ApoB from month 3 — what should I watch?",
+    "side": "right"
+  },
+  {
+    "datetime": "13 May 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Dr. Warren will reply with a short note.",
+    "side": "left"
+  },
+  {
+    "datetime": "13 May 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Also: any med talk now?",
+    "side": "right"
+  },
+  {
+    "datetime": "14 May 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "BP home avg last week 135/84.",
+    "side": "right"
+  },
+  {
+    "datetime": "15 May 2025, 10:00 AM",
+    "sender": "Dr. Warren (Medical)",
+    "text": "Short: ApoB noted; lifestyle first. No med change now. We'll reassess at month 6.",
+    "side": "left"
+  },
+  {
+    "datetime": "16 May 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logging dinners in MFP this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "17 May 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "18 May 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "19 May 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 20 — traveling to US this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "20 May 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Noted — travel plan will be active.",
+    "side": "left"
+  },
+  {
+    "datetime": "20 May 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Long flights — can I do mobility on plane?",
+    "side": "right"
+  },
+  {
+    "datetime": "21 May 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Any jet-lag sleep tips?",
+    "side": "right"
+  },
+  {
+    "datetime": "22 May 2025, 10:00 AM",
+    "sender": "Rachel (PT)",
+    "text": "Jet-lag tips and mobility on plane sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "23 May 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logging steps and sleep as requested.",
+    "side": "right"
+  },
+  {
+    "datetime": "24 May 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "25 May 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions; traveling this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "26 May 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 21 — back, tired but did mobility on flights.",
+    "side": "right"
+  },
+  {
+    "datetime": "27 May 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Welcome back — hydrate & rest.",
+    "side": "left"
+  },
+  {
+    "datetime": "27 May 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "BP mornings ~135/84.",
+    "side": "right"
+  },
+  {
+    "datetime": "28 May 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Food logging 4/7 this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "29 May 2025, 10:00 AM",
+    "sender": "Carla (Nutrition)",
+    "text": "Good — keep protein at breakfast. Sodium swaps sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "30 May 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MFP this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "31 May 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "01 Jun 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "02 Jun 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 22 — can I make one session HIIT?",
+    "side": "right"
+  },
+  {
+    "datetime": "03 Jun 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Advik recommends only if HRV ok.",
+    "side": "left"
+  },
+  {
+    "datetime": "03 Jun 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "I’ll monitor HRV and proceed carefully.",
+    "side": "right"
+  },
+  {
+    "datetime": "04 Jun 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Willing to keep sessions short.",
+    "side": "right"
+  },
+  {
+    "datetime": "05 Jun 2025, 10:00 AM",
+    "sender": "Advik (Performance)",
+    "text": "Biweekly update: 1×20-min HIIT permitted; monitor recovery.",
+    "side": "left"
+  },
+  {
+    "datetime": "06 Jun 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MFP.",
+    "side": "right"
+  },
+  {
+    "datetime": "07 Jun 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "08 Jun 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "09 Jun 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 23 — prepping for 6-month test next week.",
+    "side": "right"
+  },
+  {
+    "datetime": "10 Jun 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Please fast overnight for the panel; bring BP logs.",
+    "side": "left"
+  },
+  {
+    "datetime": "10 Jun 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Confirming fasting.",
+    "side": "right"
+  },
+  {
+    "datetime": "11 Jun 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Should I stop supplements day before?",
+    "side": "right"
+  },
+  {
+    "datetime": "12 Jun 2025, 10:00 AM",
+    "sender": "Carla (Nutrition)",
+    "text": "Hold non-essential supplements 24h before; follow lab prep.",
+    "side": "left"
+  },
+  {
+    "datetime": "13 Jun 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged weight & BP this morning.",
+    "side": "right"
+  },
+  {
+    "datetime": "14 Jun 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent and 6-month test reminder.",
+    "side": "left"
+  },
+  {
+    "datetime": "15 Jun 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "16 Jun 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 24 — at clinic for 6-month bloods today.",
+    "side": "right"
+  },
+  {
+    "datetime": "17 Jun 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Thanks — we’ll notify with short highlight.",
+    "side": "left"
+  },
+  {
+    "datetime": "17 Jun 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "I returned for the test despite travel.",
+    "side": "right"
+  },
+  {
+    "datetime": "18 Jun 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Will send home BP logs.",
+    "side": "right"
+  },
+  {
+    "datetime": "19 Jun 2025, 10:00 AM",
+    "sender": "Dr. Warren (Medical)",
+    "text": "6-month highlight: LDL decreased further; morning BP avg 134/84. Continue current plan; consider meds only if plateau.",
+    "side": "left"
+  },
+  {
+    "datetime": "20 Jun 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Noted — thanks for concise update.",
+    "side": "right"
+  },
+  {
+    "datetime": "21 Jun 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Short report sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "22 Jun 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions; traveling this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "23 Jun 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 25 — back, good to see LDL down.",
+    "side": "right"
+  },
+  {
+    "datetime": "24 Jun 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Great progress — keep salt reduction.",
+    "side": "left"
+  },
+  {
+    "datetime": "24 Jun 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Can we tighten sodium on dining nights?",
+    "side": "right"
+  },
+  {
+    "datetime": "25 Jun 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "I’ll try protein breakfast more often.",
+    "side": "right"
+  },
+  {
+    "datetime": "26 Jun 2025, 10:00 AM",
+    "sender": "Carla (Nutrition)",
+    "text": "Sodium strategies and simple swaps sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "27 Jun 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MFP 4/7 this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "28 Jun 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "29 Jun 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "30 Jun 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 26 — can one session be 30 min?",
+    "side": "right"
+  },
+  {
+    "datetime": "01 Jul 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Yes, one session can increase; keep weekly time ~5 hrs.",
+    "side": "left"
+  },
+  {
+    "datetime": "01 Jul 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Will keep sessions same count but increase one duration.",
+    "side": "right"
+  },
+  {
+    "datetime": "02 Jul 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Also send 1-page progress summary draft.",
+    "side": "right"
+  },
+  {
+    "datetime": "03 Jul 2025, 10:00 AM",
+    "sender": "Advik (Performance)",
+    "text": "Biweekly update: 1 session → 30 min allowed, monitoring load.",
+    "side": "left"
+  },
+  {
+    "datetime": "04 Jul 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MFP this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "05 Jul 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "06 Jul 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "07 Jul 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 27 — please schedule month-9 deep-dive.",
+    "side": "right"
+  },
+  {
+    "datetime": "08 Jul 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Noted — Neel will schedule and include Dr. Warren & Advik.",
+    "side": "left"
+  },
+  {
+    "datetime": "08 Jul 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Prefer week 36; virtual meeting.",
+    "side": "right"
+  },
+  {
+    "datetime": "09 Jul 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Also include 1-page dashboard with comparisons.",
+    "side": "right"
+  },
+  {
+    "datetime": "10 Jul 2025, 10:00 AM",
+    "sender": "Neel",
+    "text": "Deep-dive scheduled week 36 virtual; dashboard draft requested.",
+    "side": "left"
+  },
+  {
+    "datetime": "11 Jul 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MFP 3/7.",
+    "side": "right"
+  },
+  {
+    "datetime": "12 Jul 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "13 Jul 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "14 Jul 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 28 — traveling this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "15 Jul 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Travel plan active — 2×20-min hotel sessions suggested.",
+    "side": "left"
+  },
+  {
+    "datetime": "15 Jul 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Any hotel meal suggestions?",
+    "side": "right"
+  },
+  {
+    "datetime": "16 Jul 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "I’ll log steps.",
+    "side": "right"
+  },
+  {
+    "datetime": "17 Jul 2025, 10:00 AM",
+    "sender": "Advik (Performance)",
+    "text": "Biweekly update: travel plan set; track steps as primary metric.",
+    "side": "left"
+  },
+  {
+    "datetime": "18 Jul 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged some hotel workouts.",
+    "side": "right"
+  },
+  {
+    "datetime": "19 Jul 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "20 Jul 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions; traveling this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "21 Jul 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 29 — back, BP mornings 133/83.",
+    "side": "right"
+  },
+  {
+    "datetime": "22 Jul 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Good trend — keep protein swaps.",
+    "side": "left"
+  },
+  {
+    "datetime": "22 Jul 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Food logging 4/7 this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "23 Jul 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Energy stable.",
+    "side": "right"
+  },
+  {
+    "datetime": "24 Jul 2025, 10:00 AM",
+    "sender": "Rachel (PT)",
+    "text": "Keep mobility daily; progressive overload next block.",
+    "side": "left"
+  },
+  {
+    "datetime": "25 Jul 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MFP this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "26 Jul 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "27 Jul 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "28 Jul 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 30 — can weekend walk replace a session?",
+    "side": "right"
+  },
+  {
+    "datetime": "29 Jul 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Yes — weekend long walk can count as cardio.",
+    "side": "left"
+  },
+  {
+    "datetime": "29 Jul 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "I’ll do a 60-min walk Sunday.",
+    "side": "right"
+  },
+  {
+    "datetime": "30 Jul 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Also send mobility video again.",
+    "side": "right"
+  },
+  {
+    "datetime": "31 Jul 2025, 10:00 AM",
+    "sender": "Advik (Performance)",
+    "text": "Biweekly update: weekend long walk counts; maintain 2 higher-effort sessions.",
+    "side": "left"
+  },
+  {
+    "datetime": "01 Aug 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MFP this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "02 Aug 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "03 Aug 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "04 Aug 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 31 — send weekly short report please.",
+    "side": "right"
+  },
+  {
+    "datetime": "05 Aug 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Weekly one-line sent: steps up; BP stable; action: low-salt dinners.",
+    "side": "left"
+  },
+  {
+    "datetime": "05 Aug 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "I did 3 workouts last week (better).",
+    "side": "right"
+  },
+  {
+    "datetime": "06 Aug 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "MyFitnessPal logging improved.",
+    "side": "right"
+  },
+  {
+    "datetime": "07 Aug 2025, 10:00 AM",
+    "sender": "Carla (Nutrition)",
+    "text": "Great — keep protein at breakfast.",
+    "side": "left"
+  },
+  {
+    "datetime": "08 Aug 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MFP this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "09 Aug 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary resent.",
+    "side": "left"
+  },
+  {
+    "datetime": "10 Aug 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "11 Aug 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 32 — traveling to Tokyo this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "12 Aug 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Noted — travel week flagged in dashboard.",
+    "side": "left"
+  },
+  {
+    "datetime": "12 Aug 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Any low-salt Japanese options suggestions?",
+    "side": "right"
+  },
+  {
+    "datetime": "13 Aug 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "I’ll log sleep and steps.",
+    "side": "right"
+  },
+  {
+    "datetime": "14 Aug 2025, 10:00 AM",
+    "sender": "Advik (Performance)",
+    "text": "Biweekly update: travel plan set — focus on steps + 2×20 hotel sessions.",
+    "side": "left"
+  },
+  {
+    "datetime": "15 Aug 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Mobility on plane done.",
+    "side": "right"
+  },
+  {
+    "datetime": "16 Aug 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "17 Aug 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions; traveling this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "18 Aug 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 33 — back home, Garmin sleep lower but workouts resumed.",
+    "side": "right"
+  },
+  {
+    "datetime": "19 Aug 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Noted — keep wind-down routine.",
+    "side": "left"
+  },
+  {
+    "datetime": "19 Aug 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "BP mornings ~133/83.",
+    "side": "right"
+  },
+  {
+    "datetime": "20 Aug 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Completed 3 workouts this block.",
+    "side": "right"
+  },
+  {
+    "datetime": "21 Aug 2025, 10:00 AM",
+    "sender": "Advik (Performance)",
+    "text": "Slight intensity increase next block recommended.",
+    "side": "left"
+  },
+  {
+    "datetime": "22 Aug 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MFP this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "23 Aug 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Weekly summary sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "24 Aug 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "25 Aug 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 34 — this block I did 3 of 4 sessions (75%).",
+    "side": "right"
+  },
+  {
+    "datetime": "26 Aug 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Nice progress — Advik to adjust accordingly.",
+    "side": "left"
+  },
+  {
+    "datetime": "26 Aug 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Felt stronger in cardio sessions.",
+    "side": "right"
+  },
+  {
+    "datetime": "27 Aug 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Keep 3×25 schedule?",
+    "side": "right"
+  },
+  {
+    "datetime": "28 Aug 2025, 10:00 AM",
+    "sender": "Advik (Performance)",
+    "text": "Biweekly update: 3×25 schedule approved.",
+    "side": "left"
+  },
+  {
+    "datetime": "29 Aug 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Please prepare 1-page dashboard draft.",
+    "side": "right"
+  },
+  {
+    "datetime": "30 Aug 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Dashboard draft in progress.",
+    "side": "left"
+  },
+  {
+    "datetime": "31 Aug 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~75% sessions this block.",
+    "side": "right"
+  },
+  {
+    "datetime": "01 Sep 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 35 — deep-dive next week prep?",
+    "side": "right"
+  },
+  {
+    "datetime": "02 Sep 2025, 09:30 AM",
+    "sender": "Ruby",
+    "text": "Checklist sent: Garmin export, BP logs, questions for Dr. Warren.",
+    "side": "left"
+  },
+  {
+    "datetime": "02 Sep 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "I’ll send Garmin export tonight.",
+    "side": "right"
+  },
+  {
+    "datetime": "03 Sep 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Prefer deep-dive time morning GMT+8.",
+    "side": "right"
+  },
+  {
+    "datetime": "04 Sep 2025, 10:00 AM",
+    "sender": "Neel",
+    "text": "Deep-dive confirmed week 36 morning GMT+8 with Dr. Warren & Advik.",
+    "side": "left"
+  },
+  {
+    "datetime": "05 Sep 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Dashboard PDF requested.",
+    "side": "right"
+  },
+  {
+    "datetime": "06 Sep 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Dashboard PDF will be delivered for the meeting.",
+    "side": "left"
+  },
+  {
+    "datetime": "07 Sep 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: final prep done.",
+    "side": "right"
+  },
+  {
+    "datetime": "08 Sep 2025, 08:00 AM",
+    "sender": "Rohan (member)",
+    "text": "Week 36 — deep-dive today, ready.",
+    "side": "right"
+  },
+  {
+    "datetime": "09 Sep 2025, 09:30 AM",
+    "sender": "Neel",
+    "text": "Deep-dive summary: progress good; continue salt reduction, protein at breakfast, travel adaptations.",
+    "side": "left"
+  },
+  {
+    "datetime": "09 Sep 2025, 06:45 PM",
+    "sender": "Rohan (member)",
+    "text": "Thanks — dashboard received.",
+    "side": "right"
+  },
+  {
+    "datetime": "10 Sep 2025, 07:00 AM",
+    "sender": "Rohan (member)",
+    "text": "What’s the 3-month action list post-deep dive?",
+    "side": "right"
+  },
+  {
+    "datetime": "11 Sep 2025, 10:00 AM",
+    "sender": "Dr. Warren (Medical)",
+    "text": "Short action list: maintain sodium reduction, protein breakfast, 2–3 travel-friendly workouts; monitor BP.",
+    "side": "left"
+  },
+  {
+    "datetime": "12 Sep 2025, 08:30 AM",
+    "sender": "Rohan (member)",
+    "text": "Logged dinners in MFP this week.",
+    "side": "right"
+  },
+  {
+    "datetime": "13 Sep 2025, 11:00 AM",
+    "sender": "Ruby",
+    "text": "Final weekly summary and 3-month action list sent.",
+    "side": "left"
+  },
+  {
+    "datetime": "14 Sep 2025, 08:00 PM",
+    "sender": "Rohan (member)",
+    "text": "End-week note: completed ~50% sessions.",
+    "side": "right"
+  }
+]
