@@ -1,53 +1,60 @@
+from flask import Flask, request, jsonify
 import os
 import pickle
-import json
-from flask import Flask, request, jsonify
-from flask_cors import CORS
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 app = Flask(__name__)
-CORS(app)
 
+# File path for vector store
 VECTOR_STORE_FILE = "vector_store.pkl"
-CHAT_FILE = "whatsapp_chat_rohan_full.json"
 
-# Load embeddings if available, otherwise build them
+# Load or build embeddings
 if os.path.exists(VECTOR_STORE_FILE):
     with open(VECTOR_STORE_FILE, "rb") as f:
-        vectorizer, vectors, messages = pickle.load(f)
-    print("Loaded embeddings from vector_store.pkl")
+        data = pickle.load(f)
+        vectorizer = data["vectorizer"]
+        vectors = data["vectors"]
+        documents = data["documents"]
 else:
     print("vector_store.pkl not found. Building embeddings...")
-    with open(CHAT_FILE, "r", encoding="utf-8") as f:
-        messages = json.load(f)
-
-    texts = [msg["text"] for msg in messages if msg.get("text")]
-    vectorizer = TfidfVectorizer().fit(texts)
-    vectors = vectorizer.transform(texts)
-
+    documents = [
+        "This is a sample document.",
+        "Flask is a Python web framework.",
+        "We are building a visualization app."
+    ]
+    vectorizer = TfidfVectorizer()
+    vectors = vectorizer.fit_transform(documents)
     with open(VECTOR_STORE_FILE, "wb") as f:
-        pickle.dump((vectorizer, vectors, messages), f)
+        pickle.dump({"vectorizer": vectorizer, "vectors": vectors, "documents": documents}, f)
     print("Embeddings built and saved to vector_store.pkl")
 
-@app.route("/health", methods=["GET"])
-def health():
-    return jsonify({"status": "healthy", "collection_size": len(messages)})
+@app.route("/")
+def home():
+    return jsonify({"message": "Welcome to the Visualization App Backend! Use /status to check health or /ask to query."})
+
+@app.route("/status", methods=["GET"])
+def status():
+    return jsonify({"status": "Flask backend is running!", "collection_size": len(documents)})
 
 @app.route("/ask", methods=["POST"])
 def ask():
-    data = request.json
-    question = data.get("question", "")
-    if not question:
-        return jsonify({"error": "No question provided"}), 400
+    try:
+        data = request.get_json()
+        question = data.get("question", "")
 
-    # Vectorize question and find most similar message
-    q_vec = vectorizer.transform([question])
-    sims = cosine_similarity(q_vec, vectors).flatten()
-    idx = sims.argmax()
-    answer = messages[idx]["text"]
+        if not question.strip():
+            return jsonify({"error": "No question provided"}), 400
 
-    return jsonify({"answer": answer})
+        q_vector = vectorizer.transform([question])
+        similarities = cosine_similarity(q_vector, vectors).flatten()
+        idx = similarities.argmax()
+        best_match = documents[idx]
+
+        return jsonify({"question": question, "answer": best_match})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
