@@ -1,8 +1,6 @@
-flask
+Flask
 flask-cors
-chromadb
+chromadb==1.0.17
 google-generativeai
-requests
 python-dotenv
 gunicorn
-scikit-learn
