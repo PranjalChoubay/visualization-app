@@ -16,11 +16,11 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 app = Flask(__name__)
 CORS(app)
 
-# Setup persistent ChromaDB (saves data in ./chroma_data)
+# ---- Setup persistent ChromaDB ----
 chroma_client = chromadb.PersistentClient(path="./chroma_data")
 collection = chroma_client.get_or_create_collection(name="conversation")
 
-# Preload Gemini model once
+# ---- Preload Gemini model once ----
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # ---- Embedding helper ----
@@ -46,10 +46,9 @@ def load_and_embed():
             "metadata": {"timestamp": msg["time"], "side": msg["side"]}
         }
 
-    with ThreadPoolExecutor(max_workers=8) as executor:  # Adjust workers if needed
+    with ThreadPoolExecutor(max_workers=8) as executor:
         results = list(executor.map(lambda x: process_message(*x), enumerate(messages)))
 
-    # Add all at once to ChromaDB
     collection.add(
         ids=[r["id"] for r in results],
         embeddings=[r["embedding"] for r in results],
@@ -57,7 +56,7 @@ def load_and_embed():
         metadatas=[r["metadata"] for r in results]
     )
 
-# Only embed once if collection is empty
+# ---- Initialize embeddings if collection is empty ----
 if len(collection.get()["ids"]) == 0:
     print("Creating embeddings for the first time (parallelized)...")
     load_and_embed()
@@ -65,7 +64,7 @@ if len(collection.get()["ids"]) == 0:
 else:
     print("Embeddings already exist — skipping embedding step.")
 
-# ---- Ask Why endpoint ----
+# ---- Ask endpoint ----
 @app.route("/ask", methods=["POST"])
 def ask():
     try:
@@ -73,7 +72,6 @@ def ask():
         if not question:
             return jsonify({"error": "No question provided"}), 400
 
-        # Embed the question
         q_emb = get_embedding(question)
         results = collection.query(query_embeddings=[q_emb], n_results=3)
 
@@ -81,19 +79,17 @@ def ask():
         for doc, meta in zip(results["documents"][0], results["metadatas"][0]):
             snippets.append(f"[{meta['timestamp']}] {doc}")
 
-        # Create prompt
         prompt = f"""
-        You are a helpful assistant.
-        Based ONLY on the following conversation snippets, answer the question.
-        Cite the timestamp for each fact you use.
+You are a helpful assistant.
+Based ONLY on the following conversation snippets, answer the question.
+Cite the timestamp for each fact you use.
 
-        Conversation Snippets:
-        {chr(10).join(snippets)}
+Conversation Snippets:
+{chr(10).join(snippets)}
 
-        Question: {question}
-        """
+Question: {question}
+"""
 
-        # Use preloaded Gemini model
         response = model.generate_content(prompt)
 
         return jsonify({"answer": response.text})
@@ -103,5 +99,7 @@ def ask():
         traceback.print_exc()
         return jsonify({"error": str(e)}), 500
 
+# ---- Production server ----
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)

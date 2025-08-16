@@ -1,4 +1,7 @@
 flask
 flask-cors
 chromadb
-openai
+google-generativeai
+requests
+python-dotenv
+gunicorn

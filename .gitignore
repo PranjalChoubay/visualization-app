@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Python / Flask
+venv/
+__pycache__/
+*.pyc
+.env
+
+# ChromaDB data
+chroma_data/
