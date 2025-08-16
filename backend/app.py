@@ -5,13 +5,25 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 app = Flask(__name__)
 
-# Load stored vectorizer and vectors
+# ---- Load stored embeddings safely ----
 with open("vector_store.pkl", "rb") as f:
-    vectorizer, vectors = pickle.load(f)
+    data = pickle.load(f)
+
+# Handle both dict-style and tuple/list-style storage
+if isinstance(data, dict):
+    vectorizer = data.get("vectorizer")
+    vectors = data.get("vectors")
+elif isinstance(data, (list, tuple)):
+    if len(data) >= 2:
+        vectorizer, vectors = data[0], data[1]
+    else:
+        raise ValueError("vector_store.pkl does not have enough items")
+else:
+    raise ValueError("Unrecognized format in vector_store.pkl")
 
 @app.route("/")
 def home():
-    return "Backend is running!"
+    return jsonify({"status": "Backend is running!"})
 
 @app.route("/query", methods=["POST"])
 def query():
@@ -26,13 +38,13 @@ def query():
 
     # Compute cosine similarity
     similarities = cosine_similarity(query_vec, vectors).flatten()
-    best_idx = np.argmax(similarities)
+    best_idx = int(np.argmax(similarities))
 
     return jsonify({
         "query": user_input,
-        "best_match_index": int(best_idx),
+        "best_match_index": best_idx,
         "similarity_score": float(similarities[best_idx])
     })
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=10000, debug=True)
