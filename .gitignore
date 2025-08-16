@@ -28,6 +28,3 @@ venv/
 __pycache__/
 *.pyc
 .env
-
-# ChromaDB data
-chroma_data/
