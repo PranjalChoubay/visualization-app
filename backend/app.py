@@ -8,9 +8,10 @@ from chromadb.config import Settings
 import google.generativeai as genai
 from concurrent.futures import ThreadPoolExecutor
 
+# Load local .env (optional, ignored on deployment platforms)
 load_dotenv()
 
-# Configure Gemini
+# Configure Gemini API
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 app = Flask(__name__)
@@ -64,6 +65,11 @@ if len(collection.get()["ids"]) == 0:
 else:
     print("Embeddings already exist — skipping embedding step.")
 
+# ---- Root route for testing ----
+@app.route("/", methods=["GET"])
+def home():
+    return "Flask backend is running!"
+
 # ---- Ask endpoint ----
 @app.route("/ask", methods=["POST"])
 def ask():
@@ -102,4 +108,4 @@ Question: {question}
 # ---- Production server ----
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=port, debug=False)
