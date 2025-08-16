@@ -1,60 +1,38 @@
 from flask import Flask, request, jsonify
-import os
 import pickle
-from sklearn.feature_extraction.text import TfidfVectorizer
+import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
 app = Flask(__name__)
 
-# File path for vector store
-VECTOR_STORE_FILE = "vector_store.pkl"
-
-# Load or build embeddings
-if os.path.exists(VECTOR_STORE_FILE):
-    with open(VECTOR_STORE_FILE, "rb") as f:
-        data = pickle.load(f)
-        vectorizer = data["vectorizer"]
-        vectors = data["vectors"]
-        documents = data["documents"]
-else:
-    print("vector_store.pkl not found. Building embeddings...")
-    documents = [
-        "This is a sample document.",
-        "Flask is a Python web framework.",
-        "We are building a visualization app."
-    ]
-    vectorizer = TfidfVectorizer()
-    vectors = vectorizer.fit_transform(documents)
-    with open(VECTOR_STORE_FILE, "wb") as f:
-        pickle.dump({"vectorizer": vectorizer, "vectors": vectors, "documents": documents}, f)
-    print("Embeddings built and saved to vector_store.pkl")
+# Load stored vectorizer and vectors
+with open("vector_store.pkl", "rb") as f:
+    vectorizer, vectors = pickle.load(f)
 
 @app.route("/")
 def home():
-    return jsonify({"message": "Welcome to the Visualization App Backend! Use /status to check health or /ask to query."})
+    return "Backend is running!"
 
-@app.route("/status", methods=["GET"])
-def status():
-    return jsonify({"status": "Flask backend is running!", "collection_size": len(documents)})
+@app.route("/query", methods=["POST"])
+def query():
+    data = request.get_json()
+    user_input = data.get("query", "")
 
-@app.route("/ask", methods=["POST"])
-def ask():
-    try:
-        data = request.get_json()
-        question = data.get("question", "")
+    if not user_input.strip():
+        return jsonify({"error": "Query cannot be empty"}), 400
 
-        if not question.strip():
-            return jsonify({"error": "No question provided"}), 400
+    # Transform query into vector
+    query_vec = vectorizer.transform([user_input])
 
-        q_vector = vectorizer.transform([question])
-        similarities = cosine_similarity(q_vector, vectors).flatten()
-        idx = similarities.argmax()
-        best_match = documents[idx]
+    # Compute cosine similarity
+    similarities = cosine_similarity(query_vec, vectors).flatten()
+    best_idx = np.argmax(similarities)
 
-        return jsonify({"question": question, "answer": best_match})
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+    return jsonify({
+        "query": user_input,
+        "best_match_index": int(best_idx),
+        "similarity_score": float(similarities[best_idx])
+    })
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=5000, debug=True)
