@@ -5,3 +5,4 @@ google-generativeai
 requests
 python-dotenv
 gunicorn
+scikit-learn
