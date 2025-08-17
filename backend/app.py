@@ -1,97 +1,56 @@
 import os
-import json
 import pickle
 import numpy as np
+import logging
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from dotenv import load_dotenv
 import google.generativeai as genai
 from sklearn.metrics.pairwise import cosine_similarity
-import logging
 
-# ---- Logging ----
-logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
-
-# Load environment
+# ------------------ Setup ------------------
 load_dotenv()
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-# Flask app
 app = Flask(__name__)
 CORS(app)
 
-# ---- File paths ----
-CHAT_FILE = "whatsapp_chat_rohan_full.json"
-VECTOR_STORE = "vector_store.pkl"
+logging.basicConfig(level=logging.INFO)
 
-# ---- Current user metadata ----
+# ------------------ Globals ------------------
+embeddings = None
+vectors = None
+texts = None
 current_user = {
     "name": "Rohan",
-    "team": "Elyx",
-    "side": "right"
+    "team": "Fitness",
+    "side": "left"
 }
 
-# ---- Embedding helper ----
-def get_embedding(text: str):
+# ------------------ Utils ------------------
+def get_embedding(text):
+    """Generate embedding for a given text."""
+    model = genai.embed_content(
+        model="models/embedding-001",
+        content=text
+    )
+    return np.array(model['embedding'])
+
+def load_vector_store():
+    """Load precomputed embeddings and texts if available."""
+    global embeddings, vectors, texts
     try:
-        result = genai.embed_content(
-            model="models/text-embedding-004",
-            content=text
-        )
-        return np.array(result["embedding"], dtype=np.float32)
-    except Exception as e:
-        logging.error(f"Embedding failed: {e}")
-        return np.zeros((768,), dtype=np.float32)  # fallback dimension for safety
-
-# ---- Build embeddings & save to pickle ----
-def build_vector_store():
-    if not os.path.exists(CHAT_FILE):
-        logging.error(f"Chat file '{CHAT_FILE}' not found.")
-        return False
-
-    try:
-        with open(CHAT_FILE, "r", encoding="utf-8") as f:
-            messages = json.load(f)
-    except Exception as e:
-        logging.error(f"Failed to load chat JSON: {e}")
-        return False
-
-    texts, embeddings, metadata = [], [], []
-    for msg in messages:
-        text = f"{msg['name']}: {msg['text']}"
-        emb = get_embedding(text)
-        texts.append(text)
-        embeddings.append(emb)
-        metadata.append({"timestamp": msg.get("time", ""), "side": msg.get("side", "")})
-
-    vectors = np.vstack(embeddings)
-
-    with open(VECTOR_STORE, "wb") as f:
-        pickle.dump((vectors, texts, metadata), f)
-
-    logging.info(f"✅ Vector store built with {len(texts)} messages.")
-    return True
-
-# ---- Load vector store ----
-if not os.path.exists(VECTOR_STORE):
-    logging.info("Vector store missing — building...")
-    success = build_vector_store()
-    if not success:
-        vectors, texts, metadata = np.array([]), [], []
-else:
-    logging.info("Vector store found — loading...")
-    try:
-        with open(VECTOR_STORE, "rb") as f:
-            vectors, texts, metadata = pickle.load(f)
+        with open("vector_store.pkl", "rb") as f:
+            data = pickle.load(f)
+            embeddings = data["embeddings"]
+            texts = data["texts"]
+            vectors = np.array(embeddings)
+            logging.info("Vector store loaded successfully")
     except Exception as e:
         logging.error(f"Failed to load vector store: {e}")
-        vectors, texts, metadata = np.array([]), [], []
+        embeddings, vectors, texts = [], None, []
 
-# ---- Routes ----
-@app.route("/", methods=["GET"])
-def home():
-    return jsonify({"status": "Backend running with pickle-based RAG!"})
-
+# ------------------ Routes ------------------
 @app.route("/ask", methods=["POST"])
 def ask():
     if vectors is None or len(vectors) == 0:
@@ -112,7 +71,7 @@ def ask():
     snippets = []
     for i in top_idx:
         if sims[i] > 0.45:  # threshold for relevance
-            snippets.append(f"[{metadata[i]['timestamp']}] {texts[i]}")
+            snippets.append(f"{texts[i]}")
 
     # ---- Inject user awareness ----
     user_context = f"""
@@ -122,18 +81,17 @@ def ask():
     """
 
     # Build prompt for Gemini
+    context_text = "\n".join(snippets) if snippets else ""
     if snippets:
-        context_text = "\n".join(snippets)
         prompt = f"""
         You are a helpful assistant. You have access to the user's past conversations.
 
         {user_context}
 
         Rules:
-        1. If the past snippets are useful, include them in your answer. 
-        2. Wrap them inside [PAST_CONTEXT] ... [/PAST_CONTEXT] so the frontend can render separately.
-        3. If they are not enough to fully answer, combine them with your own reasoning.
-        4. Do not overuse exact timestamps. Instead, rephrase them naturally (e.g., 'earlier this year').
+        1. Use the past snippets if relevant.
+        2. Provide a clear answer for the new question.
+        3. Do not just repeat snippets, but integrate them naturally.
 
         Conversation Snippets:
         {context_text}
@@ -158,8 +116,17 @@ def ask():
         logging.error(f"Gemini generation failed: {e}")
         answer = "⚠️ Sorry, I had trouble generating a response."
 
-    return jsonify({"answer": answer})
+    # Return structured JSON 🚀
+    return jsonify({
+        "answer": answer,
+        "past_context": snippets if snippets else []
+    })
 
-# ---- Run ----
+@app.route("/health", methods=["GET"])
+def health():
+    return jsonify({"status": "ok"})
+
+# ------------------ Init ------------------
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    load_vector_store()
+    app.run(host="0.0.0.0", port=5000)

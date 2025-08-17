@@ -26,13 +26,12 @@ export default function AskWhy() {
 
       const data = await res.json();
 
-      // Store answer and optional context separately
       setMessages((prev) => [
         ...prev,
         {
           role: "ai",
           text: data.answer || "No answer found.",
-          context: data.context || null,
+          context: data.past_context || [],
         },
       ]);
     } catch (err) {
@@ -91,7 +90,9 @@ export default function AskWhy() {
             {msg.text}
 
             {/* Show context block if present */}
-            {msg.context && <ContextBlock context={msg.context} />}
+            {msg.context && msg.context.length > 0 && (
+              <ContextBlock context={msg.context} />
+            )}
           </div>
         ))}
         <div ref={messagesEndRef} />
@@ -172,7 +173,13 @@ function ContextBlock({ context }) {
       >
         {visible ? "−" : "+"}
       </button>
-      {visible && <div>{context}</div>}
+      {visible && (
+        <ul style={{ margin: 0, paddingLeft: "18px" }}>
+          {context.map((c, i) => (
+            <li key={i}>{c}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
