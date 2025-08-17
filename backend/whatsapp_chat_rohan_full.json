@@ -1,668 +1,746 @@
 [
   {
     "name": "Rohan",
-    "time": "2025-01-06 08:00:00",
-    "text": "Hi team — starting week 1. Garmin synced.",
+    "time": "2025-01-03 00:00:00",
+    "text": "Hi Ruby, I’ve shared my medical history and diet notes with Sarah. Quick question – since I travel so much, will that affect the accuracy of my tests?",
     "side": "right"
   },
   {
     "name": "Ruby",
-    "time": "2025-01-07 09:30:00",
-    "text": "Welcome Rohan. Baseline test booked Tue 07:30. Fast overnight.",
+    "time": "2025-01-03 00:00:00",
+    "text": "Hi Rohan 👋, thanks for sharing everything! Great question. Travel itself doesn’t change the accuracy of tests, but it can affect the readings. For example, flying across time zones or sleep loss can raise your blood pressure and glucose temporarily. That’s why we prefer to schedule tests after you’ve had at least 2 days of regular sleep and meals. Don’t worry — we’ll note any travel context when interpreting results ✅.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-01-07 18:45:00",
-    "text": "Quick follow-up: Sarah shared travel calendar.",
+    "time": "2025-01-04 00:00:00",
+    "text": "Another thing — why are there so many blood markers? I thought cholesterol and sugar were enough.",
     "side": "right"
   },
   {
+    "name": "Dr. Warren",
+    "time": "2025-01-04 00:00:00",
+    "text": "Excellent point, Rohan. The traditional cholesterol + glucose panel is only part of the story. For example: ApoB and Lp(a) give us a more precise cardiovascular risk than LDL alone. Inflammatory markers (CRP, homocysteine) show whether your arteries are irritated. Hormones (thyroid, cortisol, testosterone) affect energy, weight, mood. Micronutrient levels tell us if your body is truly optimized. Think of it like looking at your health dashboard - we don’t just check fuel (cholesterol), we also check oil, brakes, and engine temperature.",
+    "side": "left"
+  },
+  {
     "name": "Rohan",
-    "time": "2025-02-03 09:00:00",
+    "time": "2025-01-10 00:00:00",
+    "text": "Before tomorrow’s physical exam, can I still do my morning run?",
+    "side": "right"
+  },
+  {
+    "name": "Rachel",
+    "time": "2025-01-10 00:00:00",
+    "text": "I’d recommend skipping it. Exercise can temporarily elevate heart rate, blood pressure, and even some blood markers. For the exam, we want your baseline values. After the check-up, you can go back to your regular routine.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-01-11 00:00:00",
+    "text": "Just checked my Garmin HRV — average is 42 ms. Is that normal?",
+    "side": "right"
+  },
+  {
+    "name": "Advik",
+    "time": "2025-01-11 00:00:00",
+    "text": "Great you’re tracking that! HRV (Heart Rate Variability) varies a lot between people. For men your age, 40–60 ms is quite common. What matters more is the trend: if HRV dips after long flights or stressful weeks, that’s expected. If it steadily declines over months, that’s a red flag. We’ll use your Garmin + test data together to see the full picture.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-01-18 00:00:00",
+    "text": "How long till I see results? And if something urgent shows up, will I know right away?",
+    "side": "right"
+  },
+  {
+    "name": "Ruby",
+    "time": "2025-01-18 00:00:00",
+    "text": "Results take 7–10 working days since multiple labs are involved. But don’t worry — we have a triage system. If anything critical (say, very high sugar or abnormal ECG) comes up, Dr. Warren will call you the same day. Otherwise, we batch results and share them in an easy-to-read summary.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-01-19 00:00:00",
+    "text": "I read online that fasting glucose spikes can mean diabetes. Should I be worried?",
+    "side": "right"
+  },
+  {
+    "name": "Dr. Warren",
+    "time": "2025-01-19 00:00:00",
+    "text": "Not necessarily. Fasting glucose is just one data point. We also check: HbA1c (3-month sugar average), Oral Glucose Tolerance Test (how your body handles sugar after a meal), and Insulin levels (early signs of resistance). Sometimes stress, poor sleep, or even coffee before a test can raise fasting glucose. That’s why we always look at the full pattern, not just one number.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-01-25 00:00:00",
+    "text": "I noticed my report shows LDL, ApoB, and Lp(a). Why not just stick to LDL?",
+    "side": "right"
+  },
+  {
+    "name": "Carla",
+    "time": "2025-01-25 00:00:00",
+    "text": "Great eye. LDL tells us how much cholesterol is circulating, but ApoB tells us how many cholesterol particles are actually in your blood — a stronger predictor of heart disease risk. Lp(a) is genetic and can raise risk even if LDL looks fine. So, two people with the same LDL could have very different risks depending on ApoB/Lp(a). That’s why we check all three — it’s about precision.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-01-26 00:00:00",
+    "text": "My BP was a bit high last week. Can travel stress cause that?",
+    "side": "right"
+  },
+  {
+    "name": "Dr. Warren",
+    "time": "2025-01-26 00:00:00",
+    "text": "Absolutely. When you travel, your sympathetic nervous system (“fight or flight”) is more active — poor sleep, caffeine, deadlines, airport stress all push BP up. The key is whether your BP normalizes once you’re back in routine. To help: 5 minutes of deep breathing before bed, limit coffee after 2 PM, and stay hydrated during flights. We’ll track your trend over 3 months before making any medical calls.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-02-03 00:00:00",
     "text": "Which results are most concerning and how soon can I see changes?",
     "side": "right"
   },
   {
     "name": "Dr. Warren",
-    "time": "2025-02-03 09:20:00",
-    "text": "The priority areas are cholesterol and vitamin D. You should start seeing measurable changes in 8–12 weeks with consistent diet and supplements.",
+    "time": "2025-02-03 00:00:00",
+    "text": "The priority areas are cholesterol and vitamin D. You should start seeing measurable changes in 8–12 weeks with consistent diet, movement, and supplements. We’ll reassess quarterly.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-02-04 20:00:00",
+    "time": "2025-02-04 00:00:00",
     "text": "How reliable are these tests? Do results vary day to day?",
     "side": "right"
   },
   {
     "name": "Advik",
-    "time": "2025-02-04 20:30:00",
-    "text": "Great point. Some markers like glucose fluctuate daily, but long-term markers like HbA1c and ApoB are stable. That's why we repeat quarterly to see trends.",
+    "time": "2025-02-04 00:00:00",
+    "text": "Good question. Daily variation affects glucose and BP, but longer-horizon markers (HbA1c, ApoB) are stable. That’s why we trend across quarters instead of reacting to one-off values.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-02-10 09:00:00",
+    "time": "2025-02-10 00:00:00",
     "text": "Do I really need to cut rice from my meals?",
     "side": "right"
   },
   {
     "name": "Carla",
-    "time": "2025-02-10 09:20:00",
-    "text": "Not entirely. We’ll focus on portion control and swapping white rice with brown rice or quinoa a few times a week.",
+    "time": "2025-02-10 00:00:00",
+    "text": "Not entirely. We’ll keep your cultural staples but moderate portions and swap white rice with brown rice or quinoa a few times a week, plus add protein to slow glucose rise.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-02-11 20:00:00",
+    "time": "2025-02-11 00:00:00",
     "text": "Can supplements replace food-based nutrition?",
     "side": "right"
   },
   {
     "name": "Carla",
-    "time": "2025-02-11 20:30:00",
-    "text": "Food-first approach is always better — supplements are just insurance for gaps.",
+    "time": "2025-02-11 00:00:00",
+    "text": "Food-first is foundational. Supplements are gap-fillers tied to your labs (e.g., vitamin D, omega-3), not substitutes for balanced meals.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-02-17 09:00:00",
+    "time": "2025-02-17 00:00:00",
     "text": "Should I prioritize strength training over cardio?",
     "side": "right"
   },
   {
     "name": "Rachel",
-    "time": "2025-02-17 09:20:00",
-    "text": "Both are important. Strength builds metabolism and prevents muscle loss; cardio supports endurance and heart health. We'll do a hybrid plan.",
+    "time": "2025-02-17 00:00:00",
+    "text": "Both matter: strength preserves muscle and metabolic rate; cardio supports heart health. We’ll run a 3× strength + 2× cardio template and adjust for travel.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-02-18 20:00:00",
+    "time": "2025-02-18 00:00:00",
     "text": "Is 20 minutes really enough exercise?",
     "side": "right"
   },
   {
     "name": "Rachel",
-    "time": "2025-02-18 20:30:00",
-    "text": "Yes, if it's structured and consistent. Over time, we’ll progress intensity.",
+    "time": "2025-02-18 00:00:00",
+    "text": "Yes, if structured (compound moves, limited rest). We’ll progressively overload to keep gains coming.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-02-24 09:00:00",
+    "time": "2025-02-24 00:00:00",
     "text": "I only followed 50% of the plan this week. Is it even helping?",
     "side": "right"
   },
   {
     "name": "Neel",
-    "time": "2025-02-24 09:20:00",
-    "text": "Absolutely. Even partial adherence compounds. Think of it as steady deposits in your health bank account.",
+    "time": "2025-02-24 00:00:00",
+    "text": "Absolutely. Partial adherence still compounds. Aim for consistency over perfection; small wins add up.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-02-25 20:00:00",
+    "time": "2025-02-25 00:00:00",
     "text": "How do you measure success apart from test results?",
     "side": "right"
   },
   {
     "name": "Neel",
-    "time": "2025-02-25 20:30:00",
-    "text": "We track energy levels, recovery, stress tolerance, sleep quality — biomarkers are just one piece.",
+    "time": "2025-02-25 00:00:00",
+    "text": "We track sleep quality, energy, stress tolerance, recovery, and adherence. Biomarkers validate the direction but aren’t the only goal.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-03-03 09:00:00",
+    "time": "2025-03-03 00:00:00",
     "text": "My Garmin shows poor sleep after late work nights — why?",
     "side": "right"
   },
   {
     "name": "Advik",
-    "time": "2025-03-03 09:20:00",
-    "text": "Late meetings delay your circadian rhythm. Blue light and caffeine make it worse. Consistent sleep hygiene helps.",
+    "time": "2025-03-03 00:00:00",
+    "text": "Late meetings delay your circadian rhythm; blue light and caffeine worsen it. We’ll anchor a wind-down: dim lights, no caffeine after 2PM, and a fixed sleep window.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-03-04 20:00:00",
+    "time": "2025-03-04 00:00:00",
     "text": "Does HRV really predict longevity?",
     "side": "right"
   },
   {
     "name": "Dr. Warren",
-    "time": "2025-03-04 20:30:00",
-    "text": "It's correlated but not definitive. We use it as part of a broader recovery picture.",
+    "time": "2025-03-04 00:00:00",
+    "text": "HRV is a useful proxy for recovery and autonomic balance, but not a single predictor. We use it alongside BP, fitness, and labs.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-03-10 09:00:00",
+    "time": "2025-03-10 00:00:00",
     "text": "Can meditation actually change biomarkers?",
     "side": "right"
   },
   {
     "name": "Dr. Warren",
-    "time": "2025-03-10 09:20:00",
-    "text": "Yes, studies show lower cortisol, improved HRV, reduced inflammation. Even 5 minutes daily helps.",
+    "time": "2025-03-10 00:00:00",
+    "text": "Yes — lower cortisol, improved HRV, reduced CRP are seen in consistent practice. Even 5 minutes daily helps.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-03-11 20:00:00",
+    "time": "2025-03-11 00:00:00",
     "text": "Any quick hacks for reducing stress during flights?",
     "side": "right"
   },
   {
     "name": "Rachel",
-    "time": "2025-03-11 20:30:00",
-    "text": "Try mobility stretches and box breathing. These reduce stiffness and calm your nervous system.",
+    "time": "2025-03-11 00:00:00",
+    "text": "Use mobility snacks every 90 minutes, box breathing (4-4-4-4), hydrate, and walk on landing to reset circulation.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-03-17 09:00:00",
+    "time": "2025-03-17 00:00:00",
     "text": "If I delay my blood test by a week, will it ruin the comparison?",
     "side": "right"
   },
   {
     "name": "Ruby",
-    "time": "2025-03-17 09:20:00",
-    "text": "Not at all. We prefer consistency but a week won’t affect long-term interpretation.",
+    "time": "2025-03-17 00:00:00",
+    "text": "A week is fine. Consistency matters, but life happens. We’ll note it in your chart.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-03-18 20:00:00",
+    "time": "2025-03-18 00:00:00",
     "text": "What if my results worsen?",
     "side": "right"
   },
   {
     "name": "Neel",
-    "time": "2025-03-18 20:30:00",
-    "text": "We adapt. If a marker worsens, we escalate with further tests or medical referrals.",
+    "time": "2025-03-18 00:00:00",
+    "text": "We escalate: deeper panels, targeted interventions, and if needed, medical referrals. It’s a feedback loop, not a pass/fail.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-04-03 09:00:00",
+    "time": "2025-04-03 00:00:00",
     "text": "Why is my vitamin D low despite running outdoors?",
     "side": "right"
   },
   {
     "name": "Carla",
-    "time": "2025-04-03 09:20:00",
-    "text": "Absorption depends on skin tone, timing, and latitude. Supplements are necessary for you.",
+    "time": "2025-04-03 00:00:00",
+    "text": "Sun angle, timing, sunscreen, and skin tone limit synthesis. Supplementation closes the gap; we’ll titrate dose based on repeat labs.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-04-04 20:00:00",
+    "time": "2025-04-04 00:00:00",
     "text": "Are long-term supplements safe?",
     "side": "right"
   },
   {
     "name": "Carla",
-    "time": "2025-04-04 20:30:00",
-    "text": "Yes, if dosed based on labs. We'll monitor levels every 3 months.",
+    "time": "2025-04-04 00:00:00",
+    "text": "They are when dosed by labs and monitored. We’ll cycle and reassess to avoid excess.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-04-10 09:00:00",
+    "time": "2025-04-10 00:00:00",
     "text": "I felt sore after workouts. Am I overtraining?",
     "side": "right"
   },
   {
     "name": "Rachel",
-    "time": "2025-04-10 09:20:00",
-    "text": "That's normal DOMS. Overtraining shows as prolonged fatigue or declining performance.",
+    "time": "2025-04-10 00:00:00",
+    "text": "Likely DOMS. Overtraining shows prolonged fatigue, irritability, and declining performance. We’ll add deload weeks during heavy travel.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-04-11 20:00:00",
+    "time": "2025-04-11 00:00:00",
     "text": "Are hotel gyms good enough for strength work?",
     "side": "right"
   },
   {
     "name": "Rachel",
-    "time": "2025-04-11 20:30:00",
-    "text": "Yes, we adapt routines to available equipment. Consistency matters more than perfect equipment.",
+    "time": "2025-04-11 00:00:00",
+    "text": "Yes. With dumbbells and bodyweight we can hit all movement patterns. Consistency > equipment.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-04-17 09:00:00",
+    "time": "2025-04-17 00:00:00",
     "text": "I read about intermittent fasting. Should I try it?",
     "side": "right"
   },
   {
     "name": "Dr. Warren",
-    "time": "2025-04-17 09:20:00",
-    "text": "IF can help with insulin sensitivity. We can trial it safely and monitor glucose.",
+    "time": "2025-04-17 00:00:00",
+    "text": "IF can aid insulin sensitivity. We’ll trial a 12–14h fast first, monitor energy and glucose before extending.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-04-18 20:00:00",
+    "time": "2025-04-18 00:00:00",
     "text": "Will skipping breakfast affect my work productivity?",
     "side": "right"
   },
   {
     "name": "Carla",
-    "time": "2025-04-18 20:30:00",
-    "text": "Not always — but we’ll test if stable energy is maintained.",
+    "time": "2025-04-18 00:00:00",
+    "text": "We’ll watch for focus dips. If needed, use a protein-forward first meal or adjust fasting window.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-04-24 09:00:00",
+    "time": "2025-04-24 00:00:00",
     "text": "How do I maintain my habits during UK travel?",
     "side": "right"
   },
   {
     "name": "Ruby",
-    "time": "2025-04-24 09:20:00",
-    "text": "We’ll prep portable snacks, supplements, and quick hotel workouts for you.",
+    "time": "2025-04-24 00:00:00",
+    "text": "We’ll prep a travel checklist: portable supplements, resistance bands, room-friendly routines, and a simple meal pattern.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-04-25 20:00:00",
+    "time": "2025-04-25 00:00:00",
     "text": "Can flights really disrupt my lab results?",
     "side": "right"
   },
   {
     "name": "Dr. Warren",
-    "time": "2025-04-25 20:30:00",
-    "text": "Yes temporarily, but trends matter more. We'll schedule smartly.",
+    "time": "2025-04-25 00:00:00",
+    "text": "Yes, transiently (BP, glucose). We’ll schedule labs 48–72h after long-haul when possible.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-05-03 09:00:00",
+    "time": "2025-05-03 00:00:00",
     "text": "I’m in the UK and struggling with diet. Any hacks?",
     "side": "right"
   },
   {
     "name": "Carla",
-    "time": "2025-05-03 09:20:00",
-    "text": "Choose grilled proteins, add salads, avoid hidden sugars in sauces. Simple swaps go a long way.",
+    "time": "2025-05-03 00:00:00",
+    "text": "Anchor each meal on protein + veg; choose grilled over fried; beware sauces. Build a default order for common restaurants.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-05-04 20:00:00",
+    "time": "2025-05-04 00:00:00",
     "text": "Can I count hotel buffet fruit as healthy?",
     "side": "right"
   },
   {
     "name": "Carla",
-    "time": "2025-05-04 20:30:00",
-    "text": "Yes, but prioritize whole fruits over juices or desserts.",
+    "time": "2025-05-04 00:00:00",
+    "text": "Whole fruit is great; avoid juices/desserts. Add yogurt or eggs to balance carbs.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-05-10 09:00:00",
+    "time": "2025-05-10 00:00:00",
     "text": "When is my next test scheduled?",
     "side": "right"
   },
   {
     "name": "Ruby",
-    "time": "2025-05-10 09:20:00",
-    "text": "We’ll align it post-travel in June for consistency.",
+    "time": "2025-05-10 00:00:00",
+    "text": "We’ll align the panel right after you return, targeting early June for consistency.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-05-11 20:00:00",
+    "time": "2025-05-11 00:00:00",
     "text": "What if I miss a diagnostic panel?",
     "side": "right"
   },
   {
     "name": "Neel",
-    "time": "2025-05-11 20:30:00",
-    "text": "No issue — we reschedule. But consistent intervals give best trend data.",
+    "time": "2025-05-11 00:00:00",
+    "text": "We simply reschedule and keep notes. Trends matter more than exact dates.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-05-17 09:00:00",
+    "time": "2025-05-17 00:00:00",
     "text": "My HRV drops after long flights. Why?",
     "side": "right"
   },
   {
     "name": "Advik",
-    "time": "2025-05-17 09:20:00",
-    "text": "Jet lag disrupts circadian rhythm and recovery. HRV reflects this. Recovery improves with hydration and sunlight exposure.",
+    "time": "2025-05-17 00:00:00",
+    "text": "Jet lag and sleep debt suppress HRV. Expose to morning light, hydrate, and consider short naps (≤20 min).",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-05-18 20:00:00",
+    "time": "2025-05-18 00:00:00",
     "text": "Can melatonin help?",
     "side": "right"
   },
   {
     "name": "Dr. Warren",
-    "time": "2025-05-18 20:30:00",
-    "text": "Short-term yes, but we’ll focus on natural resets first.",
+    "time": "2025-05-18 00:00:00",
+    "text": "Short-term, yes (0.5–1mg). We prioritize light timing, meals, and activity first.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-05-24 09:00:00",
+    "time": "2025-05-24 00:00:00",
     "text": "How do I manage jet lag better?",
     "side": "right"
   },
   {
     "name": "Advik",
-    "time": "2025-05-24 09:20:00",
-    "text": "Sync your light exposure, meal times, and hydration with local time.",
+    "time": "2025-05-24 00:00:00",
+    "text": "Shift your schedule by 1–2 hours pre-travel, align light/meals on arrival, and keep the first evening low-stress.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-05-25 20:00:00",
+    "time": "2025-05-25 00:00:00",
     "text": "Do electrolytes help recovery?",
     "side": "right"
   },
   {
     "name": "Rachel",
-    "time": "2025-05-25 20:30:00",
-    "text": "Yes, especially post-flight dehydration. Simple oral solutions are enough.",
+    "time": "2025-05-25 00:00:00",
+    "text": "Yes — simple oral solutions post-flight aid hydration and reduce headaches/fatigue.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-06-03 09:00:00",
+    "time": "2025-06-03 00:00:00",
     "text": "Here’s my Garmin sleep trend. Why is deep sleep still low?",
     "side": "right"
   },
   {
     "name": "Advik",
-    "time": "2025-06-03 09:20:00",
-    "text": "Stress and late meals suppress deep sleep. We’ll add breathing and meal timing strategies.",
+    "time": "2025-06-03 00:00:00",
+    "text": "Late meals, alcohol, and stress suppress deep sleep. Let’s move dinner earlier and add a brief breathwork before bed.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-06-04 20:00:00",
+    "time": "2025-06-04 00:00:00",
     "text": "Does magnesium really help sleep?",
     "side": "right"
   },
   {
     "name": "Carla",
-    "time": "2025-06-04 20:30:00",
-    "text": "Yes, if deficient. We'll confirm with your labs.",
+    "time": "2025-06-04 00:00:00",
+    "text": "Helpful if deficient; we’ll confirm in labs. Consider magnesium glycinate in the evening.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-06-10 09:00:00",
+    "time": "2025-06-10 00:00:00",
     "text": "Can I increase my strength sessions now?",
     "side": "right"
   },
   {
     "name": "Rachel",
-    "time": "2025-06-10 09:20:00",
-    "text": "Yes, gradual progression is safe. We’ll add weights slowly.",
+    "time": "2025-06-10 00:00:00",
+    "text": "Yes — add one set per movement this month if recovery is good.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-06-11 20:00:00",
+    "time": "2025-06-11 00:00:00",
     "text": "What if I can’t keep up while traveling?",
     "side": "right"
   },
   {
     "name": "Rachel",
-    "time": "2025-06-11 20:30:00",
-    "text": "We’ll maintain with bodyweight work and resume heavier sessions back home.",
+    "time": "2025-06-11 00:00:00",
+    "text": "Switch to maintenance circuits: push, hinge, squat, carry — 15–20 minutes.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-06-17 09:00:00",
+    "time": "2025-06-17 00:00:00",
     "text": "Is it okay if I delay this month’s blood panel?",
     "side": "right"
   },
   {
     "name": "Ruby",
-    "time": "2025-06-17 09:20:00",
-    "text": "We’d prefer to stick to June to capture mid-program trends.",
+    "time": "2025-06-17 00:00:00",
+    "text": "Best to keep it in June for midpoint review; small delays are okay but we’ll aim within the month.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-06-18 20:00:00",
+    "time": "2025-06-18 00:00:00",
     "text": "Will I see big differences in my numbers already?",
     "side": "right"
   },
   {
     "name": "Dr. Warren",
-    "time": "2025-06-18 20:30:00",
-    "text": "Yes, cholesterol should show improvement; BP may need more time.",
+    "time": "2025-06-18 00:00:00",
+    "text": "Cholesterol often improves by now; BP may need more consistent sleep and training.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-06-24 09:00:00",
+    "time": "2025-06-24 00:00:00",
     "text": "My report shows BP still borderline. Should I start medication?",
     "side": "right"
   },
   {
     "name": "Dr. Warren",
-    "time": "2025-06-24 09:20:00",
-    "text": "Not immediately. Let’s try lifestyle tweaks another 3 months before deciding.",
+    "time": "2025-06-24 00:00:00",
+    "text": "Let’s optimize lifestyle for another 8–12 weeks, monitor home BP, and then decide together.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-06-25 20:00:00",
+    "time": "2025-06-25 00:00:00",
     "text": "Is medication long-term if started?",
     "side": "right"
   },
   {
     "name": "Dr. Warren",
-    "time": "2025-06-25 20:30:00",
-    "text": "Not always. Some can be tapered if lifestyle works well.",
+    "time": "2025-06-25 00:00:00",
+    "text": "Not always; if lifestyle holds, some meds can be reduced under supervision.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-07-03 09:00:00",
+    "time": "2025-07-03 00:00:00",
     "text": "I saw brain health scans on the panel. Should I do one?",
     "side": "right"
   },
   {
     "name": "Dr. Warren",
-    "time": "2025-07-03 09:20:00",
-    "text": "Optional. If you want early cognitive baseline, it’s useful but not urgent.",
+    "time": "2025-07-03 00:00:00",
+    "text": "Optional, useful as baseline; not urgent unless symptoms or family history suggest otherwise.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-07-04 20:00:00",
+    "time": "2025-07-04 00:00:00",
     "text": "What do cognitive tests involve?",
     "side": "right"
   },
   {
     "name": "Ruby",
-    "time": "2025-07-04 20:30:00",
-    "text": "Simple memory, attention, and reaction tasks — all non-invasive.",
+    "time": "2025-07-04 00:00:00",
+    "text": "Short app-based tasks for memory, attention, and reaction time — non-invasive and quick.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-07-10 09:00:00",
+    "time": "2025-07-10 00:00:00",
     "text": "I slipped on diet again. Is this setting me back badly?",
     "side": "right"
   },
   {
     "name": "Carla",
-    "time": "2025-07-10 09:20:00",
-    "text": "Not badly — consistency matters more. Get back on track this week.",
+    "time": "2025-07-10 00:00:00",
+    "text": "No — resume your default pattern today. Consistency over weeks matters more than a few days.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-07-11 20:00:00",
+    "time": "2025-07-11 00:00:00",
     "text": "What if I crave sweets while traveling?",
     "side": "right"
   },
   {
     "name": "Carla",
-    "time": "2025-07-11 20:30:00",
-    "text": "Choose fruit or dark chocolate instead of processed desserts.",
+    "time": "2025-07-11 00:00:00",
+    "text": "Keep protein handy; choose fruit or a small portion of dark chocolate.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-07-17 09:00:00",
+    "time": "2025-07-17 00:00:00",
     "text": "How do resilience workouts help?",
     "side": "right"
   },
   {
     "name": "Rachel",
-    "time": "2025-07-17 09:20:00",
-    "text": "They train your body to handle stress better by combining cardio bursts with recovery drills.",
+    "time": "2025-07-17 00:00:00",
+    "text": "They train stress-tolerance by alternating intensity and recovery, improving heart rate recovery.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-07-18 20:00:00",
+    "time": "2025-07-18 00:00:00",
     "text": "Can I do them in hotel rooms?",
     "side": "right"
   },
   {
     "name": "Rachel",
-    "time": "2025-07-18 20:30:00",
-    "text": "Yes, we’ll adapt with minimal equipment circuits.",
+    "time": "2025-07-18 00:00:00",
+    "text": "Yes — we’ll use intervals of bodyweight moves and controlled breathing.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-07-24 09:00:00",
+    "time": "2025-07-24 00:00:00",
     "text": "Will I get a mid-program summary?",
     "side": "right"
   },
   {
     "name": "Ruby",
-    "time": "2025-07-24 09:20:00",
-    "text": "Yes, week 28 you’ll get a full progress overview with goals for next quarter.",
+    "time": "2025-07-24 00:00:00",
+    "text": "Yes — week 28 we’ll send a concise overview with highlights and next steps.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-07-25 20:00:00",
+    "time": "2025-07-25 00:00:00",
     "text": "Can Sarah also get the summary?",
     "side": "right"
   },
   {
     "name": "Ruby",
-    "time": "2025-07-25 20:30:00",
-    "text": "Of course — we’ll share it with her for scheduling too.",
+    "time": "2025-07-25 00:00:00",
+    "text": "Absolutely — we’ll cc her for scheduling and logistics.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-08-03 09:00:00",
+    "time": "2025-08-03 00:00:00",
     "text": "What do my inflammatory markers mean?",
     "side": "right"
   },
   {
     "name": "Dr. Warren",
-    "time": "2025-08-03 09:20:00",
-    "text": "They show whether your body has chronic low-grade inflammation. Yours are trending lower — great progress.",
+    "time": "2025-08-03 00:00:00",
+    "text": "They reflect systemic inflammation. Yours are trending down — a good sign for long-term cardiovascular risk.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-08-04 20:00:00",
+    "time": "2025-08-04 00:00:00",
     "text": "Can I keep tracking these every 3 months?",
     "side": "right"
   },
   {
     "name": "Dr. Warren",
-    "time": "2025-08-04 20:30:00",
-    "text": "Yes, quarterly checks are ideal for long-term risk reduction.",
+    "time": "2025-08-04 00:00:00",
+    "text": "Yes, quarterly is a smart cadence balanced with practicality.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-08-10 09:00:00",
+    "time": "2025-08-10 00:00:00",
     "text": "What small tweaks should I continue long-term?",
     "side": "right"
   },
   {
     "name": "Carla",
-    "time": "2025-08-10 09:20:00",
-    "text": "Balanced diet, omega-3s, vitamin D supplements, consistent hydration.",
+    "time": "2025-08-10 00:00:00",
+    "text": "Keep the protein anchor, omega-3s, vitamin D, and hydration habits.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-08-11 20:00:00",
+    "time": "2025-08-11 00:00:00",
     "text": "Exercise wise, what’s sustainable?",
     "side": "right"
   },
   {
     "name": "Rachel",
-    "time": "2025-08-11 20:30:00",
-    "text": "3 strength + 2 cardio sessions per week is a lifelong template.",
+    "time": "2025-08-11 00:00:00",
+    "text": "A 3× strength + 2× cardio rhythm is a strong lifelong base.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-08-17 09:00:00",
+    "time": "2025-08-17 00:00:00",
     "text": "When is my final blood test scheduled?",
     "side": "right"
   },
   {
     "name": "Ruby",
-    "time": "2025-08-17 09:20:00",
-    "text": "Week 31. We’ll compare against your January baseline.",
+    "time": "2025-08-17 00:00:00",
+    "text": "Week 31 — we’ll compare against January baseline and June midpoint.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-08-18 20:00:00",
+    "time": "2025-08-18 00:00:00",
     "text": "What if I want an extra scan later this year?",
     "side": "right"
   },
   {
     "name": "Neel",
-    "time": "2025-08-18 20:30:00",
-    "text": "We’ll schedule add-ons anytime — you’re in control.",
+    "time": "2025-08-18 00:00:00",
+    "text": "We’ll schedule add-ons any time; the program is modular to your needs.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-08-24 09:00:00",
+    "time": "2025-08-24 00:00:00",
     "text": "What’s the overall verdict after 8 months?",
     "side": "right"
   },
   {
     "name": "Neel",
-    "time": "2025-08-24 09:20:00",
-    "text": "You’ve lowered cholesterol, stabilized BP, improved recovery. Next 6 months we’ll refine strength and sleep.",
+    "time": "2025-08-24 00:00:00",
+    "text": "Cholesterol down, BP more stable, HRV trending upward. Next phase: deeper strength progression and sleep consistency.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-08-25 20:00:00",
+    "time": "2025-08-25 00:00:00",
     "text": "How do I extend the program?",
     "side": "right"
   },
   {
     "name": "Ruby",
-    "time": "2025-08-25 20:30:00",
-    "text": "We’ll share continuation options and tailor based on your goals.",
+    "time": "2025-08-25 00:00:00",
+    "text": "We’ll share continuation options (quarterly or annual), tailored to your travel cadence.",
     "side": "left"
   }
 ]
