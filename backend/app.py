@@ -79,7 +79,7 @@ def ask():
 
     snippets = []
     for i in top_idx:
-        if sims[i] > 0.70:  # threshold for relevance
+        if sims[i] > 0.45:  # threshold for relevance
             snippets.append(f"[{metadata[i]['timestamp']}] {texts[i]}")
 
     # Build prompt for Gemini
