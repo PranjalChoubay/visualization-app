@@ -45,6 +45,8 @@ def get_embedding(text: str):
 
 # ---- Build embeddings & save to pickle ----
 def build_vector_store():
+    global vectors, texts, metadata
+    
     if not os.path.exists(CHAT_FILE):
         logging.error(f"Chat file '{CHAT_FILE}' not found.")
         return False
@@ -73,24 +75,66 @@ def build_vector_store():
     return True
 
 # ---- Load vector store ----
+# Initialize variables first
+vectors = np.array([])
+texts = []
+metadata = []
+
 if not os.path.exists(VECTOR_STORE):
     logging.info("Vector store missing — building...")
     success = build_vector_store()
     if not success:
-        vectors, texts, metadata = np.array([]), [], []
+        logging.warning("Failed to build vector store, using empty arrays")
 else:
     logging.info("Vector store found — loading...")
     try:
         with open(VECTOR_STORE, "rb") as f:
-            vectors, texts, metadata = pickle.load(f)
+            loaded_vectors, loaded_texts, loaded_metadata = pickle.load(f)
+            vectors = loaded_vectors
+            texts = loaded_texts
+            metadata = loaded_metadata
     except Exception as e:
         logging.error(f"Failed to load vector store: {e}")
-        vectors, texts, metadata = np.array([]), [], []
+        logging.warning("Using empty arrays due to load failure")
+
+# Ensure vectors is always a numpy array
+if not isinstance(vectors, np.ndarray):
+    vectors = np.array([])
+if not isinstance(texts, list):
+    texts = []
+if not isinstance(metadata, list):
+    metadata = []
+
+# Log the final state
+logging.info(f"Vector store initialized - vectors: {vectors.shape if vectors is not None else 'None'}, texts: {len(texts)}, metadata: {len(metadata)}")
 
 # ---- Routes ----
 @app.route("/", methods=["GET"])
 def home():
     return jsonify({"status": "Backend running with pickle-based RAG!"})
+
+@app.route("/status", methods=["GET"])
+def status():
+    """Get the current status of the vector store"""
+    try:
+        vector_count = len(vectors) if vectors is not None else 0
+        text_count = len(texts) if texts is not None else 0
+        metadata_count = len(metadata) if metadata is not None else 0
+        
+        return jsonify({
+            "status": "success",
+            "vector_store": {
+                "vectors_shape": vectors.shape if vectors is not None else None,
+                "vector_count": vector_count,
+                "text_count": text_count,
+                "metadata_count": metadata_count,
+                "has_vector_store_file": os.path.exists(VECTOR_STORE),
+                "has_chat_file": os.path.exists(CHAT_FILE)
+            }
+        })
+    except Exception as e:
+        logging.error(f"Status check failed: {e}")
+        return jsonify({"status": "error", "message": str(e)}), 500
 
 @app.route("/rebuild", methods=["POST"])
 def rebuild_vector_store():
@@ -111,71 +155,86 @@ def rebuild_vector_store():
 
 @app.route("/ask", methods=["POST"])
 def ask():
-    if vectors is None or len(vectors) == 0:
-        return jsonify({"error": "Vector store not available. Please rebuild."}), 500
-
-    data = request.get_json(force=True)
-    question = data.get("question", "")
-    if not question.strip():
-        return jsonify({"error": "No question provided"}), 400
-
-    # Embed question
-    q_emb = get_embedding(question).reshape(1, -1)
-
-    # Find most similar messages
-    sims = cosine_similarity(q_emb, vectors).flatten()
-    top_idx = np.argsort(sims)[::-1][:5]
-
-    snippets = []
-    for i in top_idx:
-        if sims[i] > 0.45:  # threshold for relevance
-            snippets.append(f"[{metadata[i]['timestamp']}] {texts[i]}")
-
-    # ---- Inject user awareness ----
-    user_context = f"""
-    The current user is {current_user['name']}, 
-    who is a member of the {current_user['team']} team. 
-    In past conversations, this user always corresponds to messages with side='{current_user['side']}'.
-    """
-
-    # Build prompt for Gemini
-    if snippets:
-        context_text = "\n".join(snippets)
-        prompt = f"""
-        You are a helpful assistant. You have access to the user's past conversations.
-
-        {user_context}
-
-        Rules:
-        1. If the past snippets are useful, include them in your answer. 
-        2. Wrap them inside [PAST_CONTEXT] ... [/PAST_CONTEXT] so the frontend can render separately.
-        3. If they are not enough to fully answer, combine them with your own reasoning.
-        4. Do not overuse exact timestamps. Instead, rephrase them naturally (e.g., 'earlier this year').
-
-        Conversation Snippets:
-        {context_text}
-
-        User's Question: {question}
-        """
-    else:
-        prompt = f"""
-        You are a helpful assistant. 
-
-        {user_context}
-
-        The user asked: {question}
-        No relevant past conversation was found, so answer using your own knowledge.
-        """
-
     try:
-        model = genai.GenerativeModel("gemini-1.5-flash")
-        response = model.generate_content(prompt)
-        answer = response.text.strip()
-    except Exception as e:
-        logging.error(f"Gemini generation failed: {e}")
-        answer = "⚠️ Sorry, I had trouble generating a response."
+        # Check if vector store is available
+        if vectors is None or len(vectors) == 0:
+            logging.warning("Vector store is empty or None")
+            return jsonify({"error": "Vector store not available. Please rebuild."}), 500
 
-    return jsonify({"answer": answer})
+        data = request.get_json(force=True)
+        question = data.get("question", "")
+        if not question.strip():
+            return jsonify({"error": "No question provided"}), 400
+
+        # Embed question
+        q_emb = get_embedding(question).reshape(1, -1)
+        
+        # Validate vectors shape
+        if vectors.shape[1] != q_emb.shape[1]:
+            logging.error(f"Vector dimension mismatch: vectors shape {vectors.shape}, question embedding shape {q_emb.shape}")
+            return jsonify({"error": "Vector store dimension mismatch. Please rebuild."}), 500
+
+        # Find most similar messages
+        sims = cosine_similarity(q_emb, vectors).flatten()
+        top_idx = np.argsort(sims)[::-1][:5]
+
+        snippets = []
+        for i in top_idx:
+            if sims[i] > 0.45:  # threshold for relevance
+                if i < len(metadata) and i < len(texts):
+                    snippets.append(f"[{metadata[i]['timestamp']}] {texts[i]}")
+                else:
+                    logging.warning(f"Index {i} out of bounds for metadata/texts")
+
+        # ---- Inject user awareness ----
+        user_context = f"""
+        The current user is {current_user['name']}, 
+        who is a member of the {current_user['team']} team. 
+        In past conversations, this user always corresponds to messages with side='{current_user['side']}'.
+        """
+
+        # Build prompt for Gemini
+        if snippets:
+            context_text = "\n".join(snippets)
+            prompt = f"""
+            You are a helpful assistant. You have access to the user's past conversations.
+
+            {user_context}
+
+            Rules:
+            1. If the past snippets are useful, include them in your answer. 
+            2. Wrap them inside [PAST_CONTEXT] ... [/PAST_CONTEXT] so the frontend can render separately.
+            3. If they are not enough to fully answer, combine them with your own reasoning.
+            4. Do not overuse exact timestamps. Instead, rephrase them naturally (e.g., 'earlier this year').
+
+            Conversation Snippets:
+            {context_text}
+
+            User's Question: {question}
+            """
+        else:
+            prompt = f"""
+            You are a helpful assistant. 
+
+            {user_context}
+
+            The user asked: {question}
+            No relevant past conversation was found, so answer using your own knowledge.
+            """
+
+        try:
+            model = genai.GenerativeModel("gemini-1.5-flash")
+            response = model.generate_content(prompt)
+            answer = response.text.strip()
+        except Exception as e:
+            logging.error(f"Gemini generation failed: {e}")
+            answer = "⚠️ Sorry, I had trouble generating a response."
+
+        return jsonify({"answer": answer})
+        
+    except Exception as e:
+        logging.error(f"Unexpected error in /ask endpoint: {e}")
+        return jsonify({"error": f"Internal server error: {str(e)}"}), 500
 
 # ---- Run ----
 if __name__ == "__main__":
