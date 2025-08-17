@@ -1,68 +1,97 @@
 import os
+import json
 import pickle
 import numpy as np
-import logging
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from dotenv import load_dotenv
 import google.generativeai as genai
 from sklearn.metrics.pairwise import cosine_similarity
+import logging
 
-# ------------------ Setup ------------------
+# ---- Logging ----
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+
+# Load environment
 load_dotenv()
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
+# Flask app
 app = Flask(__name__)
 CORS(app)
 
-logging.basicConfig(level=logging.INFO)
+# ---- File paths ----
+CHAT_FILE = "whatsapp_chat_rohan_full.json"
+VECTOR_STORE = "vector_store.pkl"
 
-# ------------------ Globals ------------------
-embeddings = None
-vectors = None
-texts = None
-VECTOR_FILE = "vector_store.pkl"
-
+# ---- Current user metadata ----
 current_user = {
     "name": "Rohan",
-    "team": "Fitness",
-    "side": "left"
+    "team": "Elyx",
+    "side": "right"
 }
 
-# ------------------ Utils ------------------
-def get_embedding(text):
-    """Generate embedding for a given text."""
-    model = genai.embed_content(
-        model="models/embedding-001",
-        content=text
-    )
-    return np.array(model['embedding'])
-
-def load_vector_store():
-    """Load precomputed embeddings and texts if available."""
-    global embeddings, vectors, texts
+# ---- Embedding helper ----
+def get_embedding(text: str):
     try:
-        with open(VECTOR_FILE, "rb") as f:
-            data = pickle.load(f)
-            embeddings = data["embeddings"]
-            texts = data["texts"]
-            vectors = np.array(embeddings)
-            logging.info("Vector store loaded successfully")
+        result = genai.embed_content(
+            model="models/text-embedding-004",
+            content=text
+        )
+        return np.array(result["embedding"], dtype=np.float32)
+    except Exception as e:
+        logging.error(f"Embedding failed: {e}")
+        return np.zeros((768,), dtype=np.float32)  # fallback dimension for safety
+
+# ---- Build embeddings & save to pickle ----
+def build_vector_store():
+    if not os.path.exists(CHAT_FILE):
+        logging.error(f"Chat file '{CHAT_FILE}' not found.")
+        return False
+
+    try:
+        with open(CHAT_FILE, "r", encoding="utf-8") as f:
+            messages = json.load(f)
+    except Exception as e:
+        logging.error(f"Failed to load chat JSON: {e}")
+        return False
+
+    texts, embeddings, metadata = [], [], []
+    for msg in messages:
+        text = f"{msg['name']}: {msg['text']}"
+        emb = get_embedding(text)
+        texts.append(text)
+        embeddings.append(emb)
+        metadata.append({"timestamp": msg.get("time", ""), "side": msg.get("side", "")})
+
+    vectors = np.vstack(embeddings)
+
+    with open(VECTOR_STORE, "wb") as f:
+        pickle.dump((vectors, texts, metadata), f)
+
+    logging.info(f"✅ Vector store built with {len(texts)} messages.")
+    return True
+
+# ---- Load vector store ----
+if not os.path.exists(VECTOR_STORE):
+    logging.info("Vector store missing — building...")
+    success = build_vector_store()
+    if not success:
+        vectors, texts, metadata = np.array([]), [], []
+else:
+    logging.info("Vector store found — loading...")
+    try:
+        with open(VECTOR_STORE, "rb") as f:
+            vectors, texts, metadata = pickle.load(f)
     except Exception as e:
         logging.error(f"Failed to load vector store: {e}")
-        embeddings, vectors, texts = [], None, []
+        vectors, texts, metadata = np.array([]), [], []
 
-def save_vector_store():
-    """Save embeddings and texts to file."""
-    global embeddings, texts
-    try:
-        with open(VECTOR_FILE, "wb") as f:
-            pickle.dump({"embeddings": embeddings, "texts": texts}, f)
-        logging.info("Vector store saved successfully")
-    except Exception as e:
-        logging.error(f"Failed to save vector store: {e}")
+# ---- Routes ----
+@app.route("/", methods=["GET"])
+def home():
+    return jsonify({"status": "Backend running with pickle-based RAG!"})
 
-# ------------------ Routes ------------------
 @app.route("/ask", methods=["POST"])
 def ask():
     if vectors is None or len(vectors) == 0:
@@ -83,7 +112,7 @@ def ask():
     snippets = []
     for i in top_idx:
         if sims[i] > 0.45:  # threshold for relevance
-            snippets.append(f"{texts[i]}")
+            snippets.append(f"[{metadata[i]['timestamp']}] {texts[i]}")
 
     # ---- Inject user awareness ----
     user_context = f"""
@@ -93,17 +122,18 @@ def ask():
     """
 
     # Build prompt for Gemini
-    context_text = "\n".join(snippets) if snippets else ""
     if snippets:
+        context_text = "\n".join(snippets)
         prompt = f"""
         You are a helpful assistant. You have access to the user's past conversations.
 
         {user_context}
 
         Rules:
-        1. Use the past snippets if relevant.
-        2. Provide a clear answer for the new question.
-        3. Do not just repeat snippets, but integrate them naturally.
+        1. If the past snippets are useful, include them in your answer. 
+        2. Wrap them inside [PAST_CONTEXT] ... [/PAST_CONTEXT] so the frontend can render separately.
+        3. If they are not enough to fully answer, combine them with your own reasoning.
+        4. Do not overuse exact timestamps. Instead, rephrase them naturally (e.g., 'earlier this year').
 
         Conversation Snippets:
         {context_text}
@@ -128,56 +158,8 @@ def ask():
         logging.error(f"Gemini generation failed: {e}")
         answer = "⚠️ Sorry, I had trouble generating a response."
 
-    return jsonify({
-        "answer": answer,
-        "past_context": snippets if snippets else []
-    })
+    return jsonify({"answer": answer})
 
-@app.route("/upload", methods=["POST"])
-def upload_image():
-    """Upload an image, extract text using Gemini Vision, and store embeddings."""
-    global embeddings, texts, vectors
-
-    if "file" not in request.files:
-        return jsonify({"error": "No file uploaded"}), 400
-
-    file = request.files["file"]
-    if file.filename == "":
-        return jsonify({"error": "Empty filename"}), 400
-
-    try:
-        # Save temporarily
-        filepath = os.path.join("uploads", file.filename)
-        os.makedirs("uploads", exist_ok=True)
-        file.save(filepath)
-
-        # Use Gemini Vision to extract text
-        model = genai.GenerativeModel("gemini-1.5-flash")
-        response = model.generate_content(
-            ["Extract all readable text from this chat screenshot.", {"image": filepath}]
-        )
-        extracted_text = response.text.strip()
-
-        # Embed and store
-        if extracted_text:
-            emb = get_embedding(extracted_text)
-            if embeddings is None:
-                embeddings, texts = [], []
-            embeddings.append(emb)
-            texts.append(extracted_text)
-            vectors = np.array(embeddings)
-            save_vector_store()
-
-        return jsonify({"message": "Image processed successfully", "extracted_text": extracted_text})
-    except Exception as e:
-        logging.error(f"Image processing failed: {e}")
-        return jsonify({"error": str(e)}), 500
-
-@app.route("/health", methods=["GET"])
-def health():
-    return jsonify({"status": "ok"})
-
-# ------------------ Init ------------------
+# ---- Run ----
 if __name__ == "__main__":
-    load_vector_store()
-    app.run(host="0.0.0.0", port=5000)
+    app.run(debug=True, host="0.0.0.0", port=5000)
