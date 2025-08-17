@@ -45,7 +45,6 @@ export default function AskWhy() {
         {
           role: "ai",
           text: data.answer || "No answer found.",
-          // keep this for backward compatibility, but we won't render it at the end
           context: data.past_context || [],
         },
       ]);
@@ -75,30 +74,40 @@ export default function AskWhy() {
         height: "calc(100vh - 64px)",
         maxWidth: 700,
         margin: "auto",
+        border: "1px solid #ddd",
+        borderRadius: "10px",
+        overflow: "hidden",
       }}
     >
-      {/* ✅ Clear Chat button added here */}
+      {/* ✅ Clear Chat button always visible */}
       <div
         style={{
           display: "flex",
           justifyContent: "flex-end",
-          padding: "6px 10px",
+          padding: "8px 12px",
           borderBottom: "1px solid #ddd",
-          background: "#fff",
+          background: "#f9f9f9",
         }}
       >
         <button
           onClick={clearChat}
           style={{
-            padding: "4px 10px",
-            fontSize: "12px",
+            padding: "6px 12px",
+            fontSize: "13px",
             border: "1px solid #ccc",
-            borderRadius: "8px",
+            borderRadius: "6px",
             cursor: "pointer",
-            background: "#f8f8f8",
+            background: "#fff",
+            transition: "all 0.2s ease",
           }}
+          onMouseOver={(e) =>
+            (e.target.style.background = "#f0f0f0")
+          }
+          onMouseOut={(e) =>
+            (e.target.style.background = "#fff")
+          }
         >
-          Clear Chat
+          🗑 Clear Chat
         </button>
       </div>
 
@@ -202,7 +211,6 @@ function parsePastContextSegments(text) {
     const start = match.index;
     const end = re.lastIndex;
 
-    // leading plain text (before this context block)
     if (start > lastIndex) {
       segments.push({
         type: "text",
@@ -210,7 +218,6 @@ function parsePastContextSegments(text) {
       });
     }
 
-    // the context content (without the tags)
     segments.push({
       type: "context",
       content: (match[1] || "").trim(),
@@ -219,7 +226,6 @@ function parsePastContextSegments(text) {
     lastIndex = end;
   }
 
-  // trailing plain text (after last context block)
   if (lastIndex < text.length) {
     segments.push({
       type: "text",
@@ -227,7 +233,6 @@ function parsePastContextSegments(text) {
     });
   }
 
-  // If there were no tags at all, return a single text segment
   if (segments.length === 0) {
     return [{ type: "text", content: text }];
   }
@@ -252,7 +257,7 @@ function RichAIMessage({ text }) {
   );
 }
 
-/** Styled inline box for past context (black outline, title at top) */
+/** Styled inline box for past context */
 function PastContextBox({ content }) {
   return (
     <div
@@ -270,7 +275,6 @@ function PastContextBox({ content }) {
           fontSize: "12px",
           fontWeight: 700,
           marginBottom: "6px",
-          textTransform: "none",
           color: "#000",
         }}
       >
