@@ -11,6 +11,20 @@ export default function AskWhy() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
+  useEffect(() => {
+    const saved = localStorage.getItem("askwhy_messages");
+    if (saved) {
+      setMessages(JSON.parse(saved));
+    }
+  }, []);
+
+  // ✅ Save messages to localStorage whenever they change
+  useEffect(() => {
+    if (messages.length > 0) {
+      localStorage.setItem("askwhy_messages", JSON.stringify(messages));
+    }
+  }, [messages]);
+  
   const handleAsk = async () => {
     if (!question.trim()) return;
 
