@@ -92,6 +92,23 @@ else:
 def home():
     return jsonify({"status": "Backend running with pickle-based RAG!"})
 
+@app.route("/rebuild", methods=["POST"])
+def rebuild_vector_store():
+    """Force rebuild the vector store from the current JSON file"""
+    try:
+        success = build_vector_store()
+        if success:
+            # Reload the vectors into memory
+            global vectors, texts, metadata
+            with open(VECTOR_STORE, "rb") as f:
+                vectors, texts, metadata = pickle.load(f)
+            return jsonify({"status": "success", "message": f"Vector store rebuilt with {len(texts)} messages"})
+        else:
+            return jsonify({"status": "error", "message": "Failed to rebuild vector store"}), 500
+    except Exception as e:
+        logging.error(f"Rebuild failed: {e}")
+        return jsonify({"status": "error", "message": str(e)}), 500
+
 @app.route("/ask", methods=["POST"])
 def ask():
     if vectors is None or len(vectors) == 0:
