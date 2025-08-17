@@ -19,1712 +19,650 @@
   },
   {
     "name": "Rohan",
-    "time": "2025-01-08 07:00:00",
-    "text": "Quick Q: can I do 20-min sessions instead of 30?",
-    "side": "right"
-  },
-  {
-    "name": "Carla",
-    "time": "2025-01-09 10:00:00",
-    "text": "Weekly nutrition tip sent: aim protein breakfast 3x/week.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-01-10 08:30:00",
-    "text": "Logging dinners in MyFitnessPal this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-01-11 11:00:00",
-    "text": "Reminder: bring ID for baseline tests.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-01-12 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-01-13 08:00:00",
-    "text": "Hi team — starting week 2. Garmin synced.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-01-14 09:30:00",
-    "text": "Welcome Rohan. Baseline test booked.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-01-14 18:45:00",
-    "text": "Quick follow-up: sent MyFitnessPal invite.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-01-15 07:00:00",
-    "text": "Quick Q: can I do 20-min sessions instead of 30?",
-    "side": "right"
-  },
-  {
-    "name": "Advik",
-    "time": "2025-01-16 10:00:00",
-    "text": "Biweekly exercise update: plan sent. We'll adapt for travel week.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-01-17 08:30:00",
-    "text": "Logging dinners in MyFitnessPal this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-01-18 11:00:00",
-    "text": "Weekly summary sent: steps and BP to monitor.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-01-19 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-01-20 08:00:00",
-    "text": "Week 3 — syncing Garmin data for sleep.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-01-21 09:30:00",
-    "text": "Got it. Carla will review food log.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-01-21 18:45:00",
-    "text": "Follow-up: can you resend mobility routine?",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-01-22 07:00:00",
-    "text": "Any short protein breakfast suggestions?",
-    "side": "right"
-  },
-  {
-    "name": "Rachel",
-    "time": "2025-01-23 10:00:00",
-    "text": "Mobility routine shared — 3 moves, 10 min after flights.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-01-24 08:30:00",
-    "text": "Did 1 of 3 sessions this week (50%).",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-01-25 11:00:00",
-    "text": "Weekly summary sent: steps and BP to monitor.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-01-26 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-01-27 08:00:00",
-    "text": "Week 4 — traveling Thu-Fri.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-01-28 09:30:00",
-    "text": "Noted travel week; we'll adapt the plan.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-01-28 18:45:00",
-    "text": "Sent home BP readings from this morning.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-01-29 07:00:00",
-    "text": "Can I swap workouts for walks on travel days?",
-    "side": "right"
-  },
-  {
-    "name": "Advik",
-    "time": "2025-01-30 10:00:00",
-    "text": "Biweekly exercise update: travel plan suggested — 2×20-min hotel sessions + walking.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-01-31 08:30:00",
-    "text": "Logging dinners in MyFitnessPal despite travel.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-02-01 11:00:00",
-    "text": "Weekly summary sent: travel adaptations added.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-02 20:00:00",
-    "text": "End-week note: completed ~50% sessions; traveling this week.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-03 08:00:00",
-    "text": "Week 5 — back home, energy lower after flights.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-02-04 09:30:00",
-    "text": "Welcome back — hydrate and rest where possible.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-04 18:45:00",
-    "text": "Follow-up: any supplement suggestions?",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-05 07:00:00",
-    "text": "BP readings sent: 140/88, 138/86.",
-    "side": "right"
-  },
-  {
-    "name": "Carla",
-    "time": "2025-02-06 10:00:00",
-    "text": "If fish intake low, consider omega-3; protein at breakfast recommended.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-07 08:30:00",
-    "text": "Logging dinners in MyFitnessPal this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-02-08 11:00:00",
-    "text": "Weekly summary sent: monitor BP, continue low-salt swaps.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-09 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-10 08:00:00",
-    "text": "Week 6 — can we shorten strength sets?",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-02-11 09:30:00",
-    "text": "Noted — Advik will adjust next block.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-11 18:45:00",
-    "text": "Garmin shows HRV dip midweek.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-12 07:00:00",
-    "text": "Can I skip strength if HRV low?",
-    "side": "right"
-  },
-  {
-    "name": "Advik",
-    "time": "2025-02-13 10:00:00",
-    "text": "Biweekly update: keep sessions but lower intensity on low HRV days.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-14 08:30:00",
-    "text": "Logged dinners in MFP 4/7 this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-02-15 11:00:00",
-    "text": "Weekly summary sent: sleep & HRV noted.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-16 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-17 08:00:00",
-    "text": "Week 7 — I read about ApoB, what is it?",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-02-18 09:30:00",
-    "text": "Dr. Warren will answer — we included ApoB in testing.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-18 18:45:00",
-    "text": "Also: what does CRP tell us?",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-19 07:00:00",
-    "text": "And when is the 3-month test again?",
-    "side": "right"
-  },
-  {
-    "name": "Carla",
-    "time": "2025-02-20 10:00:00",
-    "text": "CRP indicates inflammation; ApoB is particle number. We’ll review at 3-month test.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-21 08:30:00",
-    "text": "Logged dinners in MyFitnessPal this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-02-22 11:00:00",
-    "text": "Weekly summary sent. 3-month test scheduled week 12.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-23 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-24 08:00:00",
-    "text": "Week 8 — traveling Asia this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-02-25 09:30:00",
-    "text": "Noted. Travel plan will be sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-25 18:45:00",
-    "text": "Can you suggest low-salt phrases for restaurants?",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-26 07:00:00",
-    "text": "Mobility on plane — is that ok?",
-    "side": "right"
-  },
-  {
-    "name": "Advik",
-    "time": "2025-02-27 10:00:00",
-    "text": "Biweekly update: travel plan 2×20-min hotel sessions + walking.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-02-28 08:30:00",
-    "text": "I’ll try to log steps each day.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-03-01 11:00:00",
-    "text": "Weekly summary sent: travel adaptations added.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-02 20:00:00",
-    "text": "End-week note: completed ~50% sessions; traveling this week.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-03 08:00:00",
-    "text": "Week 9 — back home, did 2 hotel sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-03-04 09:30:00",
-    "text": "Welcome back — how did energy feel?",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-04 18:45:00",
-    "text": "Energy low first two days, better later.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-05 07:00:00",
-    "text": "BP mornings: 137/86, 136/85.",
-    "side": "right"
-  },
-  {
-    "name": "Rachel",
-    "time": "2025-03-06 10:00:00",
-    "text": "Recovery tips sent: stretch, short walk, mobility.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-07 08:30:00",
-    "text": "Logged dinners in MFP 3/7 this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-03-08 11:00:00",
-    "text": "Weekly summary sent: steps and BP to monitor.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-09 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-10 08:00:00",
-    "text": "Week 10 — can one session be HIIT?",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-03-11 09:30:00",
-    "text": "Advik to advise; HIIT possible if recovery ok.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-11 18:45:00",
-    "text": "I’ll keep sessions ≤20 min on weekdays.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-12 07:00:00",
-    "text": "Steps target this week?",
-    "side": "right"
-  },
-  {
-    "name": "Advik",
-    "time": "2025-03-13 10:00:00",
-    "text": "Biweekly update: allow one 20-min HIIT if HRV stable.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-14 08:30:00",
-    "text": "Logging dinners in MFP this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-03-15 11:00:00",
-    "text": "Weekly summary sent: plan adjustments noted.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-16 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-17 08:00:00",
-    "text": "Week 11 — prepping for 3-month tests.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-03-18 09:30:00",
-    "text": "Reminder: fast overnight for bloods; bring BP logs.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-18 18:45:00",
-    "text": "Confirming fasting and clinic time.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-19 07:00:00",
-    "text": "Any foods to avoid day before test?",
-    "side": "right"
-  },
-  {
-    "name": "Carla",
-    "time": "2025-03-20 10:00:00",
-    "text": "Avoid alcohol 48h before; keep usual meds unless told otherwise.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-21 08:30:00",
-    "text": "Logged weight & BP.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-03-22 11:00:00",
-    "text": "Weekly summary sent: 3-month panel scheduled next week.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-23 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-24 08:00:00",
-    "text": "Week 12 — at clinic today for 3-month bloods.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-03-25 09:30:00",
-    "text": "Thanks — we’ll notify when labs return.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-25 18:45:00",
-    "text": "I’m traveling later this week but returned for the test.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-26 07:00:00",
-    "text": "Will share BP logs at home.",
+    "time": "2025-02-03 09:00:00",
+    "text": "Which results are most concerning and how soon can I see changes?",
     "side": "right"
   },
   {
     "name": "Dr. Warren",
-    "time": "2025-03-27 10:00:00",
-    "text": "3-month highlight: LDL slightly decreased; CRP normal; BP trend stable. Continue current plan; intensify salt reduction.",
+    "time": "2025-02-03 09:20:00",
+    "text": "The priority areas are cholesterol and vitamin D. You should start seeing measurable changes in 8–12 weeks with consistent diet and supplements.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-03-28 08:30:00",
-    "text": "Noted — thanks for short summary.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-03-29 11:00:00",
-    "text": "Weekly highlight sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-30 20:00:00",
-    "text": "End-week note: completed ~50% sessions; traveling this week.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-03-31 08:00:00",
-    "text": "Week 13 — back home, want diet tweaks.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-04-01 09:30:00",
-    "text": "Carla will send simple swaps for dining out.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-01 18:45:00",
-    "text": "Can I swap late carbs for veg 4 nights?",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-02 07:00:00",
-    "text": "I’ll aim protein breakfast 4x/wk.",
-    "side": "right"
-  },
-  {
-    "name": "Carla",
-    "time": "2025-04-03 10:00:00",
-    "text": "Swap confirmed — choose veg + lean protein; small easy swaps sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-04 08:30:00",
-    "text": "Logged dinners in MFP 4/7 this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-04-05 11:00:00",
-    "text": "Weekly summary sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-06 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-07 08:00:00",
-    "text": "Week 14 — can we add short mobility daily?",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-04-08 09:30:00",
-    "text": "Rachel will confirm mobility routine.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-08 18:45:00",
-    "text": "My HRV was low midweek—should I rest?",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-09 07:00:00",
-    "text": "Also can I keep two higher intensity sessions?",
+    "time": "2025-02-04 20:00:00",
+    "text": "How reliable are these tests? Do results vary day to day?",
     "side": "right"
   },
   {
     "name": "Advik",
-    "time": "2025-04-10 10:00:00",
-    "text": "Biweekly update: keep 2 higher-effort 20–25 min sessions, mobility daily OK.",
+    "time": "2025-02-04 20:30:00",
+    "text": "Great point. Some markers like glucose fluctuate daily, but long-term markers like HbA1c and ApoB are stable. That's why we repeat quarterly to see trends.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-04-11 08:30:00",
-    "text": "Logged dinners in MFP this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-04-12 11:00:00",
-    "text": "Weekly summary sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-13 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-14 08:00:00",
-    "text": "Week 15 — travel next week — can we reduce plan?",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-04-15 09:30:00",
-    "text": "Travel week plan will be sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-15 18:45:00",
-    "text": "Also please resend mobility video.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-16 07:00:00",
-    "text": "Will try to do 2 hotel sessions.",
+    "time": "2025-02-10 09:00:00",
+    "text": "Do I really need to cut rice from my meals?",
     "side": "right"
   },
   {
     "name": "Carla",
-    "time": "2025-04-17 10:00:00",
-    "text": "Travel meal checklist sent (low salt, protein-first).",
+    "time": "2025-02-10 09:20:00",
+    "text": "Not entirely. We’ll focus on portion control and swapping white rice with brown rice or quinoa a few times a week.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-04-18 08:30:00",
-    "text": "Logged dinners in MFP.",
+    "time": "2025-02-11 20:00:00",
+    "text": "Can supplements replace food-based nutrition?",
     "side": "right"
   },
   {
-    "name": "Ruby",
-    "time": "2025-04-19 11:00:00",
-    "text": "Weekly summary sent.",
+    "name": "Carla",
+    "time": "2025-02-11 20:30:00",
+    "text": "Food-first approach is always better — supplements are just insurance for gaps.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-04-20 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-21 08:00:00",
-    "text": "Week 16 — traveling this week (Jakarta).",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-04-22 09:30:00",
-    "text": "Noted — travel plan live.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-22 18:45:00",
-    "text": "Can I do mobility between meetings?",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-23 07:00:00",
-    "text": "Steps will be primary metric for this week.",
-    "side": "right"
-  },
-  {
-    "name": "Advik",
-    "time": "2025-04-24 10:00:00",
-    "text": "Biweekly update: 2×20min hotel workouts + walk between meetings.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-25 08:30:00",
-    "text": "Logged Garmin steps daily.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-04-26 11:00:00",
-    "text": "Weekly summary sent: travel adaptations included.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-27 20:00:00",
-    "text": "End-week note: completed ~50% sessions; traveling this week.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-28 08:00:00",
-    "text": "Week 17 — back home, BP mornings ~136/85.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-04-29 09:30:00",
-    "text": "Noted — Dr. Warren monitoring trends.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-29 18:45:00",
-    "text": "Food logging 3/7 this week.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-04-30 07:00:00",
-    "text": "Energy slightly better today.",
+    "time": "2025-02-17 09:00:00",
+    "text": "Should I prioritize strength training over cardio?",
     "side": "right"
   },
   {
     "name": "Rachel",
-    "time": "2025-05-01 10:00:00",
-    "text": "Recovery tips and stretch sequence sent.",
+    "time": "2025-02-17 09:20:00",
+    "text": "Both are important. Strength builds metabolism and prevents muscle loss; cardio supports endurance and heart health. We'll do a hybrid plan.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-05-02 08:30:00",
-    "text": "Logged dinners in MFP 3/7 this week.",
+    "time": "2025-02-18 20:00:00",
+    "text": "Is 20 minutes really enough exercise?",
+    "side": "right"
+  },
+  {
+    "name": "Rachel",
+    "time": "2025-02-18 20:30:00",
+    "text": "Yes, if it's structured and consistent. Over time, we’ll progress intensity.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-02-24 09:00:00",
+    "text": "I only followed 50% of the plan this week. Is it even helping?",
+    "side": "right"
+  },
+  {
+    "name": "Neel",
+    "time": "2025-02-24 09:20:00",
+    "text": "Absolutely. Even partial adherence compounds. Think of it as steady deposits in your health bank account.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-02-25 20:00:00",
+    "text": "How do you measure success apart from test results?",
+    "side": "right"
+  },
+  {
+    "name": "Neel",
+    "time": "2025-02-25 20:30:00",
+    "text": "We track energy levels, recovery, stress tolerance, sleep quality — biomarkers are just one piece.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-03-03 09:00:00",
+    "text": "My Garmin shows poor sleep after late work nights — why?",
+    "side": "right"
+  },
+  {
+    "name": "Advik",
+    "time": "2025-03-03 09:20:00",
+    "text": "Late meetings delay your circadian rhythm. Blue light and caffeine make it worse. Consistent sleep hygiene helps.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-03-04 20:00:00",
+    "text": "Does HRV really predict longevity?",
+    "side": "right"
+  },
+  {
+    "name": "Dr. Warren",
+    "time": "2025-03-04 20:30:00",
+    "text": "It's correlated but not definitive. We use it as part of a broader recovery picture.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-03-10 09:00:00",
+    "text": "Can meditation actually change biomarkers?",
+    "side": "right"
+  },
+  {
+    "name": "Dr. Warren",
+    "time": "2025-03-10 09:20:00",
+    "text": "Yes, studies show lower cortisol, improved HRV, reduced inflammation. Even 5 minutes daily helps.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-03-11 20:00:00",
+    "text": "Any quick hacks for reducing stress during flights?",
+    "side": "right"
+  },
+  {
+    "name": "Rachel",
+    "time": "2025-03-11 20:30:00",
+    "text": "Try mobility stretches and box breathing. These reduce stiffness and calm your nervous system.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-03-17 09:00:00",
+    "text": "If I delay my blood test by a week, will it ruin the comparison?",
     "side": "right"
   },
   {
     "name": "Ruby",
-    "time": "2025-05-03 11:00:00",
-    "text": "Weekly summary sent.",
+    "time": "2025-03-17 09:20:00",
+    "text": "Not at all. We prefer consistency but a week won’t affect long-term interpretation.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-03-18 20:00:00",
+    "text": "What if my results worsen?",
+    "side": "right"
+  },
+  {
+    "name": "Neel",
+    "time": "2025-03-18 20:30:00",
+    "text": "We adapt. If a marker worsens, we escalate with further tests or medical referrals.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-04-03 09:00:00",
+    "text": "Why is my vitamin D low despite running outdoors?",
+    "side": "right"
+  },
+  {
+    "name": "Carla",
+    "time": "2025-04-03 09:20:00",
+    "text": "Absorption depends on skin tone, timing, and latitude. Supplements are necessary for you.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-04-04 20:00:00",
+    "text": "Are long-term supplements safe?",
+    "side": "right"
+  },
+  {
+    "name": "Carla",
+    "time": "2025-04-04 20:30:00",
+    "text": "Yes, if dosed based on labs. We'll monitor levels every 3 months.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-04-10 09:00:00",
+    "text": "I felt sore after workouts. Am I overtraining?",
+    "side": "right"
+  },
+  {
+    "name": "Rachel",
+    "time": "2025-04-10 09:20:00",
+    "text": "That's normal DOMS. Overtraining shows as prolonged fatigue or declining performance.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-04-11 20:00:00",
+    "text": "Are hotel gyms good enough for strength work?",
+    "side": "right"
+  },
+  {
+    "name": "Rachel",
+    "time": "2025-04-11 20:30:00",
+    "text": "Yes, we adapt routines to available equipment. Consistency matters more than perfect equipment.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-04-17 09:00:00",
+    "text": "I read about intermittent fasting. Should I try it?",
+    "side": "right"
+  },
+  {
+    "name": "Dr. Warren",
+    "time": "2025-04-17 09:20:00",
+    "text": "IF can help with insulin sensitivity. We can trial it safely and monitor glucose.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-04-18 20:00:00",
+    "text": "Will skipping breakfast affect my work productivity?",
+    "side": "right"
+  },
+  {
+    "name": "Carla",
+    "time": "2025-04-18 20:30:00",
+    "text": "Not always — but we’ll test if stable energy is maintained.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-04-24 09:00:00",
+    "text": "How do I maintain my habits during UK travel?",
+    "side": "right"
+  },
+  {
+    "name": "Ruby",
+    "time": "2025-04-24 09:20:00",
+    "text": "We’ll prep portable snacks, supplements, and quick hotel workouts for you.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-04-25 20:00:00",
+    "text": "Can flights really disrupt my lab results?",
+    "side": "right"
+  },
+  {
+    "name": "Dr. Warren",
+    "time": "2025-04-25 20:30:00",
+    "text": "Yes temporarily, but trends matter more. We'll schedule smartly.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-05-03 09:00:00",
+    "text": "I’m in the UK and struggling with diet. Any hacks?",
+    "side": "right"
+  },
+  {
+    "name": "Carla",
+    "time": "2025-05-03 09:20:00",
+    "text": "Choose grilled proteins, add salads, avoid hidden sugars in sauces. Simple swaps go a long way.",
     "side": "left"
   },
   {
     "name": "Rohan",
     "time": "2025-05-04 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
+    "text": "Can I count hotel buffet fruit as healthy?",
     "side": "right"
   },
   {
-    "name": "Rohan",
-    "time": "2025-05-05 08:00:00",
-    "text": "Week 18 — can we increase cardio intensity?",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-05-06 09:30:00",
-    "text": "Advik to advise on progression.",
+    "name": "Carla",
+    "time": "2025-05-04 20:30:00",
+    "text": "Yes, but prioritize whole fruits over juices or desserts.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-05-06 18:45:00",
-    "text": "I’ll keep sessions to ~20–25 min.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-05-07 07:00:00",
-    "text": "Weekend long walk possible — count as session?",
-    "side": "right"
-  },
-  {
-    "name": "Advik",
-    "time": "2025-05-08 10:00:00",
-    "text": "Biweekly update: weekend long walk can count as cardio session. Monitor HRV.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-05-09 08:30:00",
-    "text": "Logged dinners in MFP this week.",
+    "time": "2025-05-10 09:00:00",
+    "text": "When is my next test scheduled?",
     "side": "right"
   },
   {
     "name": "Ruby",
-    "time": "2025-05-10 11:00:00",
-    "text": "Weekly summary sent.",
+    "time": "2025-05-10 09:20:00",
+    "text": "We’ll align it post-travel in June for consistency.",
     "side": "left"
   },
   {
     "name": "Rohan",
     "time": "2025-05-11 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
+    "text": "What if I miss a diagnostic panel?",
     "side": "right"
   },
   {
-    "name": "Rohan",
-    "time": "2025-05-12 08:00:00",
-    "text": "Week 19 — quick lab question: my ApoB from month 3 — what should I watch?",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-05-13 09:30:00",
-    "text": "Dr. Warren will reply with a short note.",
+    "name": "Neel",
+    "time": "2025-05-11 20:30:00",
+    "text": "No issue — we reschedule. But consistent intervals give best trend data.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-05-13 18:45:00",
-    "text": "Also: any med talk now?",
+    "time": "2025-05-17 09:00:00",
+    "text": "My HRV drops after long flights. Why?",
     "side": "right"
   },
   {
-    "name": "Rohan",
-    "time": "2025-05-14 07:00:00",
-    "text": "BP home avg last week 135/84.",
-    "side": "right"
-  },
-  {
-    "name": "Dr. Warren",
-    "time": "2025-05-15 10:00:00",
-    "text": "Short: ApoB noted; lifestyle first. No med change now. We'll reassess at month 6.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-05-16 08:30:00",
-    "text": "Logging dinners in MFP this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-05-17 11:00:00",
-    "text": "Weekly summary sent.",
+    "name": "Advik",
+    "time": "2025-05-17 09:20:00",
+    "text": "Jet lag disrupts circadian rhythm and recovery. HRV reflects this. Recovery improves with hydration and sunlight exposure.",
     "side": "left"
   },
   {
     "name": "Rohan",
     "time": "2025-05-18 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
+    "text": "Can melatonin help?",
     "side": "right"
   },
   {
-    "name": "Rohan",
-    "time": "2025-05-19 08:00:00",
-    "text": "Week 20 — traveling to US this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-05-20 09:30:00",
-    "text": "Noted — travel plan will be active.",
+    "name": "Dr. Warren",
+    "time": "2025-05-18 20:30:00",
+    "text": "Short-term yes, but we’ll focus on natural resets first.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-05-20 18:45:00",
-    "text": "Long flights — can I do mobility on plane?",
+    "time": "2025-05-24 09:00:00",
+    "text": "How do I manage jet lag better?",
     "side": "right"
   },
   {
-    "name": "Rohan",
-    "time": "2025-05-21 07:00:00",
-    "text": "Any jet-lag sleep tips?",
-    "side": "right"
-  },
-  {
-    "name": "Rachel",
-    "time": "2025-05-22 10:00:00",
-    "text": "Jet-lag tips and mobility on plane sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-05-23 08:30:00",
-    "text": "Logging steps and sleep as requested.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-05-24 11:00:00",
-    "text": "Weekly summary sent.",
+    "name": "Advik",
+    "time": "2025-05-24 09:20:00",
+    "text": "Sync your light exposure, meal times, and hydration with local time.",
     "side": "left"
   },
   {
     "name": "Rohan",
     "time": "2025-05-25 20:00:00",
-    "text": "End-week note: completed ~50% sessions; traveling this week.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-05-26 08:00:00",
-    "text": "Week 21 — back, tired but did mobility on flights.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-05-27 09:30:00",
-    "text": "Welcome back — hydrate & rest.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-05-27 18:45:00",
-    "text": "BP mornings ~135/84.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-05-28 07:00:00",
-    "text": "Food logging 4/7 this week.",
-    "side": "right"
-  },
-  {
-    "name": "Carla",
-    "time": "2025-05-29 10:00:00",
-    "text": "Good — keep protein at breakfast. Sodium swaps sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-05-30 08:30:00",
-    "text": "Logged dinners in MFP this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-05-31 11:00:00",
-    "text": "Weekly summary sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-01 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-02 08:00:00",
-    "text": "Week 22 — can I make one session HIIT?",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-06-03 09:30:00",
-    "text": "Advik recommends only if HRV ok.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-03 18:45:00",
-    "text": "I’ll monitor HRV and proceed carefully.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-04 07:00:00",
-    "text": "Willing to keep sessions short.",
-    "side": "right"
-  },
-  {
-    "name": "Advik",
-    "time": "2025-06-05 10:00:00",
-    "text": "Biweekly update: 1×20-min HIIT permitted; monitor recovery.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-06 08:30:00",
-    "text": "Logged dinners in MFP.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-06-07 11:00:00",
-    "text": "Weekly summary sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-08 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-09 08:00:00",
-    "text": "Week 23 — prepping for 6-month test next week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-06-10 09:30:00",
-    "text": "Please fast overnight for the panel; bring BP logs.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-10 18:45:00",
-    "text": "Confirming fasting.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-11 07:00:00",
-    "text": "Should I stop supplements day before?",
-    "side": "right"
-  },
-  {
-    "name": "Carla",
-    "time": "2025-06-12 10:00:00",
-    "text": "Hold non-essential supplements 24h before; follow lab prep.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-13 08:30:00",
-    "text": "Logged weight & BP this morning.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-06-14 11:00:00",
-    "text": "Weekly summary sent and 6-month test reminder.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-15 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-16 08:00:00",
-    "text": "Week 24 — at clinic for 6-month bloods today.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-06-17 09:30:00",
-    "text": "Thanks — we’ll notify with short highlight.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-17 18:45:00",
-    "text": "I returned for the test despite travel.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-18 07:00:00",
-    "text": "Will send home BP logs.",
-    "side": "right"
-  },
-  {
-    "name": "Dr. Warren",
-    "time": "2025-06-19 10:00:00",
-    "text": "6-month highlight: LDL decreased further; morning BP avg 134/84. Continue current plan; consider meds only if plateau.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-20 08:30:00",
-    "text": "Noted — thanks for concise update.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-06-21 11:00:00",
-    "text": "Short report sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-22 20:00:00",
-    "text": "End-week note: completed ~50% sessions; traveling this week.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-23 08:00:00",
-    "text": "Week 25 — back, good to see LDL down.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-06-24 09:30:00",
-    "text": "Great progress — keep salt reduction.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-24 18:45:00",
-    "text": "Can we tighten sodium on dining nights?",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-25 07:00:00",
-    "text": "I’ll try protein breakfast more often.",
-    "side": "right"
-  },
-  {
-    "name": "Carla",
-    "time": "2025-06-26 10:00:00",
-    "text": "Sodium strategies and simple swaps sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-27 08:30:00",
-    "text": "Logged dinners in MFP 4/7 this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-06-28 11:00:00",
-    "text": "Weekly summary sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-29 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-06-30 08:00:00",
-    "text": "Week 26 — can one session be 30 min?",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-07-01 09:30:00",
-    "text": "Yes, one session can increase; keep weekly time ~5 hrs.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-01 18:45:00",
-    "text": "Will keep sessions same count but increase one duration.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-02 07:00:00",
-    "text": "Also send 1-page progress summary draft.",
-    "side": "right"
-  },
-  {
-    "name": "Advik",
-    "time": "2025-07-03 10:00:00",
-    "text": "Biweekly update: 1 session → 30 min allowed, monitoring load.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-04 08:30:00",
-    "text": "Logged dinners in MFP this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-07-05 11:00:00",
-    "text": "Weekly summary sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-06 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-07 08:00:00",
-    "text": "Week 27 — please schedule month-9 deep-dive.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-07-08 09:30:00",
-    "text": "Noted — Neel will schedule and include Dr. Warren & Advik.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-08 18:45:00",
-    "text": "Prefer week 36; virtual meeting.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-09 07:00:00",
-    "text": "Also include 1-page dashboard with comparisons.",
-    "side": "right"
-  },
-  {
-    "name": "Neel",
-    "time": "2025-07-10 10:00:00",
-    "text": "Deep-dive scheduled week 36 virtual; dashboard draft requested.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-11 08:30:00",
-    "text": "Logged dinners in MFP 3/7.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-07-12 11:00:00",
-    "text": "Weekly summary sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-13 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-14 08:00:00",
-    "text": "Week 28 — traveling this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-07-15 09:30:00",
-    "text": "Travel plan active — 2×20-min hotel sessions suggested.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-15 18:45:00",
-    "text": "Any hotel meal suggestions?",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-16 07:00:00",
-    "text": "I’ll log steps.",
-    "side": "right"
-  },
-  {
-    "name": "Advik",
-    "time": "2025-07-17 10:00:00",
-    "text": "Biweekly update: travel plan set; track steps as primary metric.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-18 08:30:00",
-    "text": "Logged some hotel workouts.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-07-19 11:00:00",
-    "text": "Weekly summary sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-20 20:00:00",
-    "text": "End-week note: completed ~50% sessions; traveling this week.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-21 08:00:00",
-    "text": "Week 29 — back, BP mornings 133/83.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-07-22 09:30:00",
-    "text": "Good trend — keep protein swaps.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-22 18:45:00",
-    "text": "Food logging 4/7 this week.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-23 07:00:00",
-    "text": "Energy stable.",
+    "text": "Do electrolytes help recovery?",
     "side": "right"
   },
   {
     "name": "Rachel",
-    "time": "2025-07-24 10:00:00",
-    "text": "Keep mobility daily; progressive overload next block.",
+    "time": "2025-05-25 20:30:00",
+    "text": "Yes, especially post-flight dehydration. Simple oral solutions are enough.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-07-25 08:30:00",
-    "text": "Logged dinners in MFP this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-07-26 11:00:00",
-    "text": "Weekly summary sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-27 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-28 08:00:00",
-    "text": "Week 30 — can weekend walk replace a session?",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-07-29 09:30:00",
-    "text": "Yes — weekend long walk can count as cardio.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-29 18:45:00",
-    "text": "I’ll do a 60-min walk Sunday.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-07-30 07:00:00",
-    "text": "Also send mobility video again.",
+    "time": "2025-06-03 09:00:00",
+    "text": "Here’s my Garmin sleep trend. Why is deep sleep still low?",
     "side": "right"
   },
   {
     "name": "Advik",
-    "time": "2025-07-31 10:00:00",
-    "text": "Biweekly update: weekend long walk counts; maintain 2 higher-effort sessions.",
+    "time": "2025-06-03 09:20:00",
+    "text": "Stress and late meals suppress deep sleep. We’ll add breathing and meal timing strategies.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-08-01 08:30:00",
-    "text": "Logged dinners in MFP this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-08-02 11:00:00",
-    "text": "Weekly summary sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-03 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-04 08:00:00",
-    "text": "Week 31 — send weekly short report please.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-08-05 09:30:00",
-    "text": "Weekly one-line sent: steps up; BP stable; action: low-salt dinners.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-05 18:45:00",
-    "text": "I did 3 workouts last week (better).",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-06 07:00:00",
-    "text": "MyFitnessPal logging improved.",
+    "time": "2025-06-04 20:00:00",
+    "text": "Does magnesium really help sleep?",
     "side": "right"
   },
   {
     "name": "Carla",
-    "time": "2025-08-07 10:00:00",
-    "text": "Great — keep protein at breakfast.",
+    "time": "2025-06-04 20:30:00",
+    "text": "Yes, if deficient. We'll confirm with your labs.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-08-08 08:30:00",
-    "text": "Logged dinners in MFP this week.",
+    "time": "2025-06-10 09:00:00",
+    "text": "Can I increase my strength sessions now?",
+    "side": "right"
+  },
+  {
+    "name": "Rachel",
+    "time": "2025-06-10 09:20:00",
+    "text": "Yes, gradual progression is safe. We’ll add weights slowly.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-06-11 20:00:00",
+    "text": "What if I can’t keep up while traveling?",
+    "side": "right"
+  },
+  {
+    "name": "Rachel",
+    "time": "2025-06-11 20:30:00",
+    "text": "We’ll maintain with bodyweight work and resume heavier sessions back home.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-06-17 09:00:00",
+    "text": "Is it okay if I delay this month’s blood panel?",
     "side": "right"
   },
   {
     "name": "Ruby",
-    "time": "2025-08-09 11:00:00",
-    "text": "Weekly summary resent.",
+    "time": "2025-06-17 09:20:00",
+    "text": "We’d prefer to stick to June to capture mid-program trends.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-08-10 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-11 08:00:00",
-    "text": "Week 32 — traveling to Tokyo this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-08-12 09:30:00",
-    "text": "Noted — travel week flagged in dashboard.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-12 18:45:00",
-    "text": "Any low-salt Japanese options suggestions?",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-13 07:00:00",
-    "text": "I’ll log sleep and steps.",
-    "side": "right"
-  },
-  {
-    "name": "Advik",
-    "time": "2025-08-14 10:00:00",
-    "text": "Biweekly update: travel plan set — focus on steps + 2×20 hotel sessions.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-15 08:30:00",
-    "text": "Mobility on plane done.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-08-16 11:00:00",
-    "text": "Weekly summary sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-17 20:00:00",
-    "text": "End-week note: completed ~50% sessions; traveling this week.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-18 08:00:00",
-    "text": "Week 33 — back home, Garmin sleep lower but workouts resumed.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-08-19 09:30:00",
-    "text": "Noted — keep wind-down routine.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-19 18:45:00",
-    "text": "BP mornings ~133/83.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-20 07:00:00",
-    "text": "Completed 3 workouts this block.",
-    "side": "right"
-  },
-  {
-    "name": "Advik",
-    "time": "2025-08-21 10:00:00",
-    "text": "Slight intensity increase next block recommended.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-22 08:30:00",
-    "text": "Logged dinners in MFP this week.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-08-23 11:00:00",
-    "text": "Weekly summary sent.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-24 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-25 08:00:00",
-    "text": "Week 34 — this block I did 3 of 4 sessions (75%).",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-08-26 09:30:00",
-    "text": "Nice progress — Advik to adjust accordingly.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-26 18:45:00",
-    "text": "Felt stronger in cardio sessions.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-27 07:00:00",
-    "text": "Keep 3×25 schedule?",
-    "side": "right"
-  },
-  {
-    "name": "Advik",
-    "time": "2025-08-28 10:00:00",
-    "text": "Biweekly update: 3×25 schedule approved.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-29 08:30:00",
-    "text": "Please prepare 1-page dashboard draft.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-08-30 11:00:00",
-    "text": "Dashboard draft in progress.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-08-31 20:00:00",
-    "text": "End-week note: completed ~75% sessions this block.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-09-01 08:00:00",
-    "text": "Week 35 — deep-dive next week prep?",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-09-02 09:30:00",
-    "text": "Checklist sent: Garmin export, BP logs, questions for Dr. Warren.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-09-02 18:45:00",
-    "text": "I’ll send Garmin export tonight.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-09-03 07:00:00",
-    "text": "Prefer deep-dive time morning GMT+8.",
-    "side": "right"
-  },
-  {
-    "name": "Neel",
-    "time": "2025-09-04 10:00:00",
-    "text": "Deep-dive confirmed week 36 morning GMT+8 with Dr. Warren & Advik.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-09-05 08:30:00",
-    "text": "Dashboard PDF requested.",
-    "side": "right"
-  },
-  {
-    "name": "Ruby",
-    "time": "2025-09-06 11:00:00",
-    "text": "Dashboard PDF will be delivered for the meeting.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-09-07 20:00:00",
-    "text": "End-week note: final prep done.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-09-08 08:00:00",
-    "text": "Week 36 — deep-dive today, ready.",
-    "side": "right"
-  },
-  {
-    "name": "Neel",
-    "time": "2025-09-09 09:30:00",
-    "text": "Deep-dive summary: progress good; continue salt reduction, protein at breakfast, travel adaptations.",
-    "side": "left"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-09-09 18:45:00",
-    "text": "Thanks — dashboard received.",
-    "side": "right"
-  },
-  {
-    "name": "Rohan",
-    "time": "2025-09-10 07:00:00",
-    "text": "What’s the 3-month action list post-deep dive?",
+    "time": "2025-06-18 20:00:00",
+    "text": "Will I see big differences in my numbers already?",
     "side": "right"
   },
   {
     "name": "Dr. Warren",
-    "time": "2025-09-11 10:00:00",
-    "text": "Short action list: maintain sodium reduction, protein breakfast, 2–3 travel-friendly workouts; monitor BP.",
+    "time": "2025-06-18 20:30:00",
+    "text": "Yes, cholesterol should show improvement; BP may need more time.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-09-12 08:30:00",
-    "text": "Logged dinners in MFP this week.",
+    "time": "2025-06-24 09:00:00",
+    "text": "My report shows BP still borderline. Should I start medication?",
+    "side": "right"
+  },
+  {
+    "name": "Dr. Warren",
+    "time": "2025-06-24 09:20:00",
+    "text": "Not immediately. Let’s try lifestyle tweaks another 3 months before deciding.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-06-25 20:00:00",
+    "text": "Is medication long-term if started?",
+    "side": "right"
+  },
+  {
+    "name": "Dr. Warren",
+    "time": "2025-06-25 20:30:00",
+    "text": "Not always. Some can be tapered if lifestyle works well.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-07-03 09:00:00",
+    "text": "I saw brain health scans on the panel. Should I do one?",
+    "side": "right"
+  },
+  {
+    "name": "Dr. Warren",
+    "time": "2025-07-03 09:20:00",
+    "text": "Optional. If you want early cognitive baseline, it’s useful but not urgent.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-07-04 20:00:00",
+    "text": "What do cognitive tests involve?",
     "side": "right"
   },
   {
     "name": "Ruby",
-    "time": "2025-09-13 11:00:00",
-    "text": "Final weekly summary and 3-month action list sent.",
+    "time": "2025-07-04 20:30:00",
+    "text": "Simple memory, attention, and reaction tasks — all non-invasive.",
     "side": "left"
   },
   {
     "name": "Rohan",
-    "time": "2025-09-14 20:00:00",
-    "text": "End-week note: completed ~50% sessions.",
+    "time": "2025-07-10 09:00:00",
+    "text": "I slipped on diet again. Is this setting me back badly?",
     "side": "right"
+  },
+  {
+    "name": "Carla",
+    "time": "2025-07-10 09:20:00",
+    "text": "Not badly — consistency matters more. Get back on track this week.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-07-11 20:00:00",
+    "text": "What if I crave sweets while traveling?",
+    "side": "right"
+  },
+  {
+    "name": "Carla",
+    "time": "2025-07-11 20:30:00",
+    "text": "Choose fruit or dark chocolate instead of processed desserts.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-07-17 09:00:00",
+    "text": "How do resilience workouts help?",
+    "side": "right"
+  },
+  {
+    "name": "Rachel",
+    "time": "2025-07-17 09:20:00",
+    "text": "They train your body to handle stress better by combining cardio bursts with recovery drills.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-07-18 20:00:00",
+    "text": "Can I do them in hotel rooms?",
+    "side": "right"
+  },
+  {
+    "name": "Rachel",
+    "time": "2025-07-18 20:30:00",
+    "text": "Yes, we’ll adapt with minimal equipment circuits.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-07-24 09:00:00",
+    "text": "Will I get a mid-program summary?",
+    "side": "right"
+  },
+  {
+    "name": "Ruby",
+    "time": "2025-07-24 09:20:00",
+    "text": "Yes, week 28 you’ll get a full progress overview with goals for next quarter.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-07-25 20:00:00",
+    "text": "Can Sarah also get the summary?",
+    "side": "right"
+  },
+  {
+    "name": "Ruby",
+    "time": "2025-07-25 20:30:00",
+    "text": "Of course — we’ll share it with her for scheduling too.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-08-03 09:00:00",
+    "text": "What do my inflammatory markers mean?",
+    "side": "right"
+  },
+  {
+    "name": "Dr. Warren",
+    "time": "2025-08-03 09:20:00",
+    "text": "They show whether your body has chronic low-grade inflammation. Yours are trending lower — great progress.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-08-04 20:00:00",
+    "text": "Can I keep tracking these every 3 months?",
+    "side": "right"
+  },
+  {
+    "name": "Dr. Warren",
+    "time": "2025-08-04 20:30:00",
+    "text": "Yes, quarterly checks are ideal for long-term risk reduction.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-08-10 09:00:00",
+    "text": "What small tweaks should I continue long-term?",
+    "side": "right"
+  },
+  {
+    "name": "Carla",
+    "time": "2025-08-10 09:20:00",
+    "text": "Balanced diet, omega-3s, vitamin D supplements, consistent hydration.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-08-11 20:00:00",
+    "text": "Exercise wise, what’s sustainable?",
+    "side": "right"
+  },
+  {
+    "name": "Rachel",
+    "time": "2025-08-11 20:30:00",
+    "text": "3 strength + 2 cardio sessions per week is a lifelong template.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-08-17 09:00:00",
+    "text": "When is my final blood test scheduled?",
+    "side": "right"
+  },
+  {
+    "name": "Ruby",
+    "time": "2025-08-17 09:20:00",
+    "text": "Week 31. We’ll compare against your January baseline.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-08-18 20:00:00",
+    "text": "What if I want an extra scan later this year?",
+    "side": "right"
+  },
+  {
+    "name": "Neel",
+    "time": "2025-08-18 20:30:00",
+    "text": "We’ll schedule add-ons anytime — you’re in control.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-08-24 09:00:00",
+    "text": "What’s the overall verdict after 8 months?",
+    "side": "right"
+  },
+  {
+    "name": "Neel",
+    "time": "2025-08-24 09:20:00",
+    "text": "You’ve lowered cholesterol, stabilized BP, improved recovery. Next 6 months we’ll refine strength and sleep.",
+    "side": "left"
+  },
+  {
+    "name": "Rohan",
+    "time": "2025-08-25 20:00:00",
+    "text": "How do I extend the program?",
+    "side": "right"
+  },
+  {
+    "name": "Ruby",
+    "time": "2025-08-25 20:30:00",
+    "text": "We’ll share continuation options and tailor based on your goals.",
+    "side": "left"
   }
 ]
