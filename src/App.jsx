@@ -10,8 +10,8 @@ export default function App() {
     <Box sx={{ minHeight: "100dvh", bgcolor: "background.default" }}>
       <TopNav />
       <Routes>
-        <Route path="/why" element={<AskWhy />} />
-        <Route path="/" element={<Timeline />} />
+        <Route path="/" element={<AskWhy />} />
+        <Route path="/why" element={<Timeline />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Box>
