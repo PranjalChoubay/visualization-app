@@ -21,6 +21,8 @@ logging.basicConfig(level=logging.INFO)
 embeddings = None
 vectors = None
 texts = None
+VECTOR_FILE = "vector_store.pkl"
+
 current_user = {
     "name": "Rohan",
     "team": "Fitness",
@@ -40,7 +42,7 @@ def load_vector_store():
     """Load precomputed embeddings and texts if available."""
     global embeddings, vectors, texts
     try:
-        with open("vector_store.pkl", "rb") as f:
+        with open(VECTOR_FILE, "rb") as f:
             data = pickle.load(f)
             embeddings = data["embeddings"]
             texts = data["texts"]
@@ -49,6 +51,16 @@ def load_vector_store():
     except Exception as e:
         logging.error(f"Failed to load vector store: {e}")
         embeddings, vectors, texts = [], None, []
+
+def save_vector_store():
+    """Save embeddings and texts to file."""
+    global embeddings, texts
+    try:
+        with open(VECTOR_FILE, "wb") as f:
+            pickle.dump({"embeddings": embeddings, "texts": texts}, f)
+        logging.info("Vector store saved successfully")
+    except Exception as e:
+        logging.error(f"Failed to save vector store: {e}")
 
 # ------------------ Routes ------------------
 @app.route("/ask", methods=["POST"])
@@ -116,11 +128,50 @@ def ask():
         logging.error(f"Gemini generation failed: {e}")
         answer = "⚠️ Sorry, I had trouble generating a response."
 
-    # Return structured JSON 🚀
     return jsonify({
         "answer": answer,
         "past_context": snippets if snippets else []
     })
+
+@app.route("/upload", methods=["POST"])
+def upload_image():
+    """Upload an image, extract text using Gemini Vision, and store embeddings."""
+    global embeddings, texts, vectors
+
+    if "file" not in request.files:
+        return jsonify({"error": "No file uploaded"}), 400
+
+    file = request.files["file"]
+    if file.filename == "":
+        return jsonify({"error": "Empty filename"}), 400
+
+    try:
+        # Save temporarily
+        filepath = os.path.join("uploads", file.filename)
+        os.makedirs("uploads", exist_ok=True)
+        file.save(filepath)
+
+        # Use Gemini Vision to extract text
+        model = genai.GenerativeModel("gemini-1.5-flash")
+        response = model.generate_content(
+            ["Extract all readable text from this chat screenshot.", {"image": filepath}]
+        )
+        extracted_text = response.text.strip()
+
+        # Embed and store
+        if extracted_text:
+            emb = get_embedding(extracted_text)
+            if embeddings is None:
+                embeddings, texts = [], []
+            embeddings.append(emb)
+            texts.append(extracted_text)
+            vectors = np.array(embeddings)
+            save_vector_store()
+
+        return jsonify({"message": "Image processed successfully", "extracted_text": extracted_text})
+    except Exception as e:
+        logging.error(f"Image processing failed: {e}")
+        return jsonify({"error": str(e)}), 500
 
 @app.route("/health", methods=["GET"])
 def health():
