@@ -7,6 +7,10 @@ from flask_cors import CORS
 from dotenv import load_dotenv
 import google.generativeai as genai
 from sklearn.metrics.pairwise import cosine_similarity
+import logging
+
+# ---- Logging ----
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
 # Load environment
 load_dotenv()
@@ -22,16 +26,28 @@ VECTOR_STORE = "vector_store.pkl"
 
 # ---- Embedding helper ----
 def get_embedding(text: str):
-    result = genai.embed_content(
-        model="models/text-embedding-004",
-        content=text
-    )
-    return np.array(result["embedding"], dtype=np.float32)
+    try:
+        result = genai.embed_content(
+            model="models/text-embedding-004",
+            content=text
+        )
+        return np.array(result["embedding"], dtype=np.float32)
+    except Exception as e:
+        logging.error(f"Embedding failed: {e}")
+        return np.zeros((768,), dtype=np.float32)  # fallback dimension for safety
 
 # ---- Build embeddings & save to pickle ----
 def build_vector_store():
-    with open(CHAT_FILE, "r", encoding="utf-8") as f:
-        messages = json.load(f)
+    if not os.path.exists(CHAT_FILE):
+        logging.error(f"Chat file '{CHAT_FILE}' not found.")
+        return False
+
+    try:
+        with open(CHAT_FILE, "r", encoding="utf-8") as f:
+            messages = json.load(f)
+    except Exception as e:
+        logging.error(f"Failed to load chat JSON: {e}")
+        return False
 
     texts, embeddings, metadata = [], [], []
     for msg in messages:
@@ -39,24 +55,30 @@ def build_vector_store():
         emb = get_embedding(text)
         texts.append(text)
         embeddings.append(emb)
-        metadata.append({"timestamp": msg["time"], "side": msg["side"]})
+        metadata.append({"timestamp": msg.get("time", ""), "side": msg.get("side", "")})
 
     vectors = np.vstack(embeddings)
 
     with open(VECTOR_STORE, "wb") as f:
         pickle.dump((vectors, texts, metadata), f)
 
-    print(f"✅ Vector store built with {len(texts)} messages.")
+    logging.info(f"✅ Vector store built with {len(texts)} messages.")
+    return True
 
 # ---- Load vector store ----
 if not os.path.exists(VECTOR_STORE):
-    print("Vector store missing — building...")
-    build_vector_store()
+    logging.info("Vector store missing — building...")
+    success = build_vector_store()
+    if not success:
+        vectors, texts, metadata = np.array([]), [], []
 else:
-    print("Vector store found — loading...")
-
-with open(VECTOR_STORE, "rb") as f:
-    vectors, texts, metadata = pickle.load(f)
+    logging.info("Vector store found — loading...")
+    try:
+        with open(VECTOR_STORE, "rb") as f:
+            vectors, texts, metadata = pickle.load(f)
+    except Exception as e:
+        logging.error(f"Failed to load vector store: {e}")
+        vectors, texts, metadata = np.array([]), [], []
 
 # ---- Routes ----
 @app.route("/", methods=["GET"])
@@ -65,7 +87,10 @@ def home():
 
 @app.route("/ask", methods=["POST"])
 def ask():
-    data = request.get_json()
+    if vectors is None or len(vectors) == 0:
+        return jsonify({"error": "Vector store not available. Please rebuild."}), 500
+
+    data = request.get_json(force=True)
     question = data.get("question", "")
     if not question.strip():
         return jsonify({"error": "No question provided"}), 400
@@ -100,17 +125,21 @@ def ask():
         User's Question: {question}
         """
     else:
-        # No strong matches, fallback to normal reasoning
         prompt = f"""
         You are a helpful assistant. 
         The user asked: {question}
         No relevant past conversation was found, so answer using your own knowledge.
         """
 
-    model = genai.GenerativeModel("gemini-1.5-flash")
-    response = model.generate_content(prompt)
+    try:
+        model = genai.GenerativeModel("gemini-1.5-flash")
+        response = model.generate_content(prompt)
+        answer = response.text.strip()
+    except Exception as e:
+        logging.error(f"Gemini generation failed: {e}")
+        answer = "⚠️ Sorry, I had trouble generating a response."
 
-    return jsonify({"answer": response.text})
+    return jsonify({"answer": answer})
 
 # ---- Run ----
 if __name__ == "__main__":
