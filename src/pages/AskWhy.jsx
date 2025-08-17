@@ -24,7 +24,7 @@ export default function AskWhy() {
       localStorage.setItem("askwhy_messages", JSON.stringify(messages));
     }
   }, [messages]);
-  
+
   const handleAsk = async () => {
     if (!question.trim()) return;
 
@@ -61,6 +61,12 @@ export default function AskWhy() {
     }
   };
 
+  // ✅ NEW FUNCTION: clear chat
+  const clearChat = () => {
+    localStorage.removeItem("askwhy_messages");
+    setMessages([]);
+  };
+
   return (
     <div
       style={{
@@ -71,6 +77,31 @@ export default function AskWhy() {
         margin: "auto",
       }}
     >
+      {/* ✅ Clear Chat button added here */}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+          padding: "6px 10px",
+          borderBottom: "1px solid #ddd",
+          background: "#fff",
+        }}
+      >
+        <button
+          onClick={clearChat}
+          style={{
+            padding: "4px 10px",
+            fontSize: "12px",
+            border: "1px solid #ccc",
+            borderRadius: "8px",
+            cursor: "pointer",
+            background: "#f8f8f8",
+          }}
+        >
+          Clear Chat
+        </button>
+      </div>
+
       {/* Chat messages */}
       <div
         style={{
