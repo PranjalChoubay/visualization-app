@@ -4,7 +4,6 @@ export default function AskWhy() {
   const [messages, setMessages] = useState([]);
   const [question, setQuestion] = useState("");
   const [loading, setLoading] = useState(false);
-  const [toggleOpen, setToggleOpen] = useState(false); // NEW toggle state
   const messagesEndRef = useRef(null);
 
   // Auto-scroll to bottom when messages change
@@ -32,6 +31,7 @@ export default function AskWhy() {
         {
           role: "ai",
           text: data.answer || "No answer found.",
+          // keep this for backward compatibility, but we won't render it at the end
           context: data.past_context || [],
         },
       ]);
@@ -88,57 +88,14 @@ export default function AskWhy() {
               position: "relative",
             }}
           >
-            {msg.text}
-
-            {/* Show context block if present */}
-            {msg.context && msg.context.length > 0 && (
-              <ContextBlock context={msg.context} />
+            {msg.role === "ai" ? (
+              <RichAIMessage text={msg.text} />
+            ) : (
+              msg.text
             )}
           </div>
         ))}
         <div ref={messagesEndRef} />
-      </div>
-
-      {/* 🔽 Toggle Box Section */}
-      <div
-        style={{
-          borderTop: "1px solid #ddd",
-          background: "#fff",
-          padding: "10px",
-        }}
-      >
-        <button
-          onClick={() => setToggleOpen(!toggleOpen)}
-          style={{
-            background: "linear-gradient(45deg, #d6249f, #285AEB)",
-            color: "white",
-            border: "none",
-            padding: "8px 16px",
-            borderRadius: "20px",
-            cursor: "pointer",
-            fontWeight: "bold",
-          }}
-        >
-          {toggleOpen ? "Hide Box" : "Show Box"}
-        </button>
-
-        {toggleOpen && (
-          <div
-            style={{
-              marginTop: "10px",
-              padding: "12px",
-              borderRadius: "12px",
-              background: "#f5f7fb",
-              boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
-              fontSize: "14px",
-              color: "#333",
-            }}
-          >
-            🔹 This is a toggleable box.  
-            <br />
-            You can place extra info, notes, or settings here.
-          </div>
-        )}
       </div>
 
       {/* Input area */}
@@ -185,44 +142,96 @@ export default function AskWhy() {
   );
 }
 
-// Collapsible Context Block Component
-function ContextBlock({ context }) {
-  const [visible, setVisible] = useState(true);
+/**
+ * Parses a string and splits it into ordered segments:
+ * - plain text pieces
+ * - context blocks found inside [PAST_CONTEXT]...[/PAST_CONTEXT]
+ */
+function parsePastContextSegments(text) {
+  const segments = [];
+  const re = /\[PAST_CONTEXT\]([\s\S]*?)\[\/PAST_CONTEXT\]/g;
+  let lastIndex = 0;
+  let match;
 
+  while ((match = re.exec(text)) !== null) {
+    const start = match.index;
+    const end = re.lastIndex;
+
+    // leading plain text (before this context block)
+    if (start > lastIndex) {
+      segments.push({
+        type: "text",
+        content: text.slice(lastIndex, start),
+      });
+    }
+
+    // the context content (without the tags)
+    segments.push({
+      type: "context",
+      content: (match[1] || "").trim(),
+    });
+
+    lastIndex = end;
+  }
+
+  // trailing plain text (after last context block)
+  if (lastIndex < text.length) {
+    segments.push({
+      type: "text",
+      content: text.slice(lastIndex),
+    });
+  }
+
+  // If there were no tags at all, return a single text segment
+  if (segments.length === 0) {
+    return [{ type: "text", content: text }];
+  }
+
+  return segments;
+}
+
+/** Renders the AI message preserving the exact position of context blocks */
+function RichAIMessage({ text }) {
+  const segments = parsePastContextSegments(text);
+
+  return (
+    <div style={{ whiteSpace: "pre-wrap" }}>
+      {segments.map((seg, idx) =>
+        seg.type === "context" ? (
+          <PastContextBox key={`ctx-${idx}`} content={seg.content} />
+        ) : (
+          <span key={`txt-${idx}`}>{seg.content}</span>
+        )
+      )}
+    </div>
+  );
+}
+
+/** Styled inline box for past context (black outline, title at top) */
+function PastContextBox({ content }) {
   return (
     <div
       style={{
         marginTop: "8px",
-        background: "#f0f4f9",
-        color: "#333",
+        marginBottom: "8px",
+        border: "1px solid #000",
         borderRadius: "10px",
+        background: "#ffffff",
         padding: "8px 12px",
-        fontSize: "13px",
-        position: "relative",
       }}
     >
-      <button
-        onClick={() => setVisible(!visible)}
+      <div
         style={{
-          position: "absolute",
-          top: "5px",
-          right: "8px",
-          border: "none",
-          background: "transparent",
-          cursor: "pointer",
-          fontWeight: "bold",
-          fontSize: "14px",
+          fontSize: "12px",
+          fontWeight: 700,
+          marginBottom: "6px",
+          textTransform: "none",
+          color: "#000",
         }}
       >
-        {visible ? "−" : "+"}
-      </button>
-      {visible && (
-        <ul style={{ margin: 0, paddingLeft: "18px" }}>
-          {context.map((c, i) => (
-            <li key={i}>{c}</li>
-          ))}
-        </ul>
-      )}
+        Context from past conversation
+      </div>
+      <div style={{ whiteSpace: "pre-wrap", color: "#333" }}>{content}</div>
     </div>
   );
 }
