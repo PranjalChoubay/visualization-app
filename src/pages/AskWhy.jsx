@@ -4,6 +4,7 @@ export default function AskWhy() {
   const [messages, setMessages] = useState([]);
   const [question, setQuestion] = useState("");
   const [loading, setLoading] = useState(false);
+  const [toggleOpen, setToggleOpen] = useState(false); // NEW toggle state
   const messagesEndRef = useRef(null);
 
   // Auto-scroll to bottom when messages change
@@ -96,6 +97,48 @@ export default function AskWhy() {
           </div>
         ))}
         <div ref={messagesEndRef} />
+      </div>
+
+      {/* 🔽 Toggle Box Section */}
+      <div
+        style={{
+          borderTop: "1px solid #ddd",
+          background: "#fff",
+          padding: "10px",
+        }}
+      >
+        <button
+          onClick={() => setToggleOpen(!toggleOpen)}
+          style={{
+            background: "linear-gradient(45deg, #d6249f, #285AEB)",
+            color: "white",
+            border: "none",
+            padding: "8px 16px",
+            borderRadius: "20px",
+            cursor: "pointer",
+            fontWeight: "bold",
+          }}
+        >
+          {toggleOpen ? "Hide Box" : "Show Box"}
+        </button>
+
+        {toggleOpen && (
+          <div
+            style={{
+              marginTop: "10px",
+              padding: "12px",
+              borderRadius: "12px",
+              background: "#f5f7fb",
+              boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
+              fontSize: "14px",
+              color: "#333",
+            }}
+          >
+            🔹 This is a toggleable box.  
+            <br />
+            You can place extra info, notes, or settings here.
+          </div>
+        )}
       </div>
 
       {/* Input area */}
