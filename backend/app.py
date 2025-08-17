@@ -1,4 +1,4 @@
-import os
+]import os
 import json
 import pickle
 import numpy as np
@@ -77,21 +77,35 @@ def ask():
     sims = cosine_similarity(q_emb, vectors).flatten()
     top_idx = np.argsort(sims)[::-1][:5]
 
-    snippets = [
-        f"[{metadata[i]['timestamp']}] {texts[i]}" for i in top_idx
-    ]
+    snippets = []
+    for i in top_idx:
+        if sims[i] > 0.70:  # threshold for relevance
+            snippets.append(f"[{metadata[i]['timestamp']}] {texts[i]}")
 
     # Build prompt for Gemini
-    prompt = f"""
-    You are a helpful assistant.
-    Based ONLY on the following conversation snippets, answer the user's question.
-    Cite the timestamp for each fact you use.
+    if snippets:
+        context_text = "\n".join(snippets)
+        prompt = f"""
+        You are a helpful assistant. You have access to the user's past conversations.
 
-    Conversation Snippets:
-    {chr(10).join(snippets)}
+        Rules:
+        1. If the past snippets are useful, include them in your answer. 
+        2. Wrap them inside [PAST_CONTEXT] ... [/PAST_CONTEXT] so the frontend can render separately.
+        3. If they are not enough to fully answer, combine them with your own reasoning.
+        4. Do not overuse exact timestamps. Instead, rephrase them naturally (e.g., 'earlier this year').
 
-    User's Question: {question}
-    """
+        Conversation Snippets:
+        {context_text}
+
+        User's Question: {question}
+        """
+    else:
+        # No strong matches, fallback to normal reasoning
+        prompt = f"""
+        You are a helpful assistant. 
+        The user asked: {question}
+        No relevant past conversation was found, so answer using your own knowledge.
+        """
 
     model = genai.GenerativeModel("gemini-1.5-flash")
     response = model.generate_content(prompt)
