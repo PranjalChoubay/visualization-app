@@ -24,6 +24,13 @@ CORS(app)
 CHAT_FILE = "whatsapp_chat_rohan_full.json"
 VECTOR_STORE = "vector_store.pkl"
 
+# ---- Current user metadata ----
+current_user = {
+    "name": "Rohan",
+    "team": "Elyx",
+    "side": "right"
+}
+
 # ---- Embedding helper ----
 def get_embedding(text: str):
     try:
@@ -107,11 +114,20 @@ def ask():
         if sims[i] > 0.45:  # threshold for relevance
             snippets.append(f"[{metadata[i]['timestamp']}] {texts[i]}")
 
+    # ---- Inject user awareness ----
+    user_context = f"""
+    The current user is {current_user['name']}, 
+    who is a member of the {current_user['team']} team. 
+    In past conversations, this user always corresponds to messages with side='{current_user['side']}'.
+    """
+
     # Build prompt for Gemini
     if snippets:
         context_text = "\n".join(snippets)
         prompt = f"""
         You are a helpful assistant. You have access to the user's past conversations.
+
+        {user_context}
 
         Rules:
         1. If the past snippets are useful, include them in your answer. 
@@ -127,6 +143,9 @@ def ask():
     else:
         prompt = f"""
         You are a helpful assistant. 
+
+        {user_context}
+
         The user asked: {question}
         No relevant past conversation was found, so answer using your own knowledge.
         """
