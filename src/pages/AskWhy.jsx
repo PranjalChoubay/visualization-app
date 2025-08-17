@@ -26,9 +26,14 @@ export default function AskWhy() {
 
       const data = await res.json();
 
+      // Store answer and optional context separately
       setMessages((prev) => [
         ...prev,
-        { role: "ai", text: data.answer || "No answer found." },
+        {
+          role: "ai",
+          text: data.answer || "No answer found.",
+          context: data.context || null,
+        },
       ]);
     } catch (err) {
       console.error(err);
@@ -47,7 +52,7 @@ export default function AskWhy() {
       style={{
         display: "flex",
         flexDirection: "column",
-        height: "calc(100vh - 64px)", // 👈 Adjust for TopNav height
+        height: "calc(100vh - 64px)",
         maxWidth: 700,
         margin: "auto",
       }}
@@ -80,9 +85,13 @@ export default function AskWhy() {
               whiteSpace: "pre-wrap",
               wordWrap: "break-word",
               boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
+              position: "relative",
             }}
           >
             {msg.text}
+
+            {/* Show context block if present */}
+            {msg.context && <ContextBlock context={msg.context} />}
           </div>
         ))}
         <div ref={messagesEndRef} />
@@ -128,6 +137,42 @@ export default function AskWhy() {
           {loading ? "..." : "Send"}
         </button>
       </div>
+    </div>
+  );
+}
+
+// Collapsible Context Block Component
+function ContextBlock({ context }) {
+  const [visible, setVisible] = useState(true);
+
+  return (
+    <div
+      style={{
+        marginTop: "8px",
+        background: "#f0f4f9",
+        color: "#333",
+        borderRadius: "10px",
+        padding: "8px 12px",
+        fontSize: "13px",
+        position: "relative",
+      }}
+    >
+      <button
+        onClick={() => setVisible(!visible)}
+        style={{
+          position: "absolute",
+          top: "5px",
+          right: "8px",
+          border: "none",
+          background: "transparent",
+          cursor: "pointer",
+          fontWeight: "bold",
+          fontSize: "14px",
+        }}
+      >
+        {visible ? "−" : "+"}
+      </button>
+      {visible && <div>{context}</div>}
     </div>
   );
 }
